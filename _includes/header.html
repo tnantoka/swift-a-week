@@ -34,7 +34,7 @@
 					<a href="/category.html">category</a>
 				</li>			
 			{% endif %}
-			{% if page.path == "about.html" %}
+			{% if page.path == "about.md" %}
 			<span class="title">
 				<li>
 					<a href="/about.html">about</a>
@@ -49,6 +49,11 @@
 		<div class="description"> {{ site.motto }} </div>		
 		<ul class="social-links">
 			<li>
+				<a href="https://twitter.com/{{ site.twitter_username }}" title="Twitter">
+					<img width="19px" height="19px" src="/images/twitter.png"/>
+				</a>
+			</li>
+			<li>
 				<a href="https://github.com/{{ site.github_username }}" title="Github">
 					<img width="19px" height="19px" src="/images/github.png"/>
 				</a>
@@ -56,11 +61,6 @@
 			<li>
 				<a href="/feed.xml" title="RSS">
 					<img width="19px" height="19px" src="/images/rss.png"/>
-				</a>
-			</li>
-			<li>
-				<a href="https://twitter.com/{{ site.twitter_username }}" title="Twitter">
-					<img width="19px" height="19px" src="/images/twitter.png"/>
 				</a>
 			</li>
 		</ul>		

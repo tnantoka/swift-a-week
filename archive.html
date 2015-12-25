@@ -1,22 +1,23 @@
 ---
-layout: default
+layout: page
+title: Archive
 ---
 
 <div class="well">
 {%for post in site.posts %}
     {% unless post.next %}
-        <h2>{{ post.date | date: '%Y' }}</h2>
+        <h2>{{ post.date | date: '%Y年' }}</h2>
         <ul>
     {% else %}
-        {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-        {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+        {% capture year %}{{ post.date | date: '%Y年' }}{% endcapture %}
+        {% capture nyear %}{{ post.next.date | date: '%Y年' }}{% endcapture %}
         {% if year != nyear %}
             </ul>
-            <h1>{{ post.date | date: '%Y' }}</h1>
+            <h1>{{ post.date | date: '%Y年' }}</h1>
             <ul>
         {% endif %}
     {% endunless %}
-    <li><span>{{ post.date | date: "%b %d" }}</span>» <a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+    <li><span>{{ post.date | date: "%-m月%-d日" }}</span>» <a href="{{ site.baseurl}}{{ post.url }}">{% include week.html date=post.date %}{{ post.title }}</a></li>
 {% endfor %}
 </ul>
 </div>

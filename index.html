@@ -8,9 +8,10 @@ layout: default
       <li>
         <br>
         <h3>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{% include week.html date=post.date %}{{ post.title }}</a>
         </h3>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y %H:%m" }}</span>
+        <span class="post-meta">{{ post.date | date: "%Y年%-m月%-d日" }}</span>
+        <span class="post-meta"><a href="{{ post.url | prepend: site.baseurl }}#disqus_thread"></a></span>
         <hr id="line">
 		<div class="content">
 		{{ post.excerpt }}

@@ -31,6 +31,7 @@ body {
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
+table,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
 }
@@ -201,4 +202,33 @@ pre {
             fill: $grey-color;
         }
     }
+}
+
+
+
+/**
+ * Texts
+ */
+
+strong {
+  font-weight: bold;
+}
+
+
+
+/**
+ * Tables
+ */
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+}
+
+th, td {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }

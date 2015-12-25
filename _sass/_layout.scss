@@ -11,7 +11,7 @@ html,body {
 }
 
 .header-container {
-    max-width: 700px;
+    max-width: calc(800px - 30px * 2);
     margin: 0px auto;
 }
 
@@ -124,6 +124,7 @@ li {
 
 .post-list {
 	list-style:none;
+  margin-left: 0;
 }
 
 .post-list li h3 {
@@ -185,6 +186,7 @@ li {
     font-size: 11px;
     text-align: center;
 	color: #666;
+  padding-bottom: 1rem;
 }
 
 #gotop {

@@ -7,12 +7,29 @@
     <br>
     <div class="page-content">
       <div class="wrapper">
+        {% if site.safe %}
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <!-- Swift a Week -->
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="ca-pub-7033544542206385"
+               data-ad-slot="3641894053"
+               data-ad-format="auto"></ins>
+          <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        {% endif %}
+
         {{ content }}
       </div>
     </div>
     
     {% include footer.html %}
     
+    {% if site.safe %}
+      <script id="dsq-count-scr" src="//swiftaweek.disqus.com/count.js" async></script>
+      <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    {% endif %}
   </body>
 
 </html>

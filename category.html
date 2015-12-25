@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: page
+title: Category
 ---
 
 <div class="well">
@@ -7,10 +8,10 @@ layout: default
 {% assign category = categories | split:',' | sort %}
 {% for item in (0..site.categories.size) %}{% unless forloop.last %}
 {% capture word %}{{ category[item] | strip_newlines }}{% endcapture %}
-<h2 class="category" id="{{ word }}">{{ word }}</h2>
+<h2 class="category" id="{{ word }}">{{ word | capitalize }}</h2>
 <ul>
 {% for post in site.categories[word] %}{% if post.title != null %}
-<li><span>{{ post.date | date: "%b %d" }}</span>» <a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+<li><span>{{ post.date | date: "%-m月%-d日" }}</span>» <a href="{{ site.baseurl}}{{ post.url }}">{% include week.html date=post.date %}{{ post.title }}</a></li>
 {% endif %}{% endfor %}
 </ul>
 {% endunless %}{% endfor %}
