@@ -19,6 +19,7 @@ permalink: /about.html
 1. 必ず何かしら手を動かす。
 1. 1週間に1つ以上投稿するのはOK。（ただし翌週以降の分が免除されるわけではない）
 1. 書き溜めはしない。（1週間以上かかってしまった記事を、ある週で公開するのはよしとする）
+1. 文体はです・ます調にする。
 
 ## 成果物
 
@@ -32,6 +33,10 @@ App | App StoreにSubmitできるレベルのもの。
 Tips | 特定のケースで役に立ちそうなコード片。
 Library | [CocoaPods](https://cocoapods.org/)や[Carthage](https://github.com/Carthage/Carthage)向けに公開したもの。
 
+## ネタ
+
+基本的に月曜日になった時点でやりたいことを優先しますが、何も思いつかない場合は、[ネタ · Issue #2 · tnantoka/swift-a-week](https://github.com/tnantoka/swift-a-week/issues/2)に書いてあるものをやります。こんなのやって欲しい等のリクエストも歓迎です。
+
 ## マネタイズ
 
 運営費を稼ぐ＆モチベーションアップのために検討中です。
@@ -40,5 +45,5 @@ Library | [CocoaPods](https://cocoapods.org/)や[Carthage](https://github.com/Ca
 - アプリ作って広告を貼る。
 - 完成品のアプリのコードをGumroadで売る。
 
-2015年12月25日にスタート。来年のクリスマスまで無事続くのか…？
+というわけで、2015年12月25日にスタート。果たして来年のクリスマスまで無事続くのでしょうか…？
 
