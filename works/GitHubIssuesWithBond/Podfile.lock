@@ -1,0 +1,29 @@
+PODS:
+  - APIKit (1.1.2):
+    - Result (~> 1.0.1)
+  - Bond (4.3.0)
+  - GitHubAuth (0.1.0)
+  - Himotoki (1.3.2)
+  - Keys (1.0.0)
+  - Result (1.0.1)
+
+DEPENDENCIES:
+  - APIKit
+  - Bond
+  - GitHubAuth
+  - Himotoki
+  - Keys (from `Pods/CocoaPodsKeys`)
+
+EXTERNAL SOURCES:
+  Keys:
+    :path: Pods/CocoaPodsKeys
+
+SPEC CHECKSUMS:
+  APIKit: d6e313f1ca3b0cae30a7059f872f7780d8a147ec
+  Bond: ebe2364b18130690083cbceff036420b21494ae4
+  GitHubAuth: 54d22c831288fdf67ed7c380b1127b0d8b729d64
+  Himotoki: e803d71cdf0cf6a1c4f5004d949b659231abcc5b
+  Keys: 7d2ff6ff42f6903358267ce56e9392f83c31acfe
+  Result: caef80340451e1f07492fa1e89117f83613bce24
+
+COCOAPODS: 0.39.0

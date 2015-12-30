@@ -23,8 +23,9 @@ $(function(){
     $('[data-date]').each(function() {
       var $this = $(this);
       var current = parseDate($this.data('date'));
-      var beginning = parseDate('Dec, 21, 2015');
-      var week = Math.ceil(345600000 / 1000 / 60 / 60 / 24 / 7);
+      var beginning = parseDate('Dec, 28, 2015');
+      var diff = current - beginning;
+      var week = Math.floor(diff / 1000 / 60 / 60 / 24 / 7) + 1;
       var prefix = '[Week ' + week + '] ';
       $this.text(prefix);
       if ($this.data('title')) {

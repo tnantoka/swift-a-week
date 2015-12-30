@@ -5,7 +5,7 @@ layout: default
   <br>
   <header class="post-header">
     <h1 class="post-title">{% include week.html date=page.date title="true" %}{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%Y年%-m月%-d日" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    <p class="post-meta">{{ page.date | date: "%Y年%-m月%-d日" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %} • {% for category in page.categories %}{{ category | capitalize }}{% endfor %} • <a href="{{ page.url | prepend: site.baseurl }}#disqus_thread"></a> • <a href="https://github.com/tnantoka/swift-a-week/commits/gh-pages/{{ page.path }}">編集履歴</a></small></p>
   </header>
 
   <article class="post-content">

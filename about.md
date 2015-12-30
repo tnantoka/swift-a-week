@@ -32,6 +32,7 @@ Example | やってみた、レベル。READMEに書いてある以上の知見�
 App | App StoreにSubmitできるレベルのもの。
 Tips | 特定のケースで役に立ちそうなコード片。
 Library | [CocoaPods](https://cocoapods.org/)や[Carthage](https://github.com/Carthage/Carthage)向けに公開したもの。
+Functional | 関数型プログラミング関連。ここは勉強したい部分なので手を動かす量が少なくなってもよしとする。
 
 ## ネタ
 
@@ -45,5 +46,5 @@ Library | [CocoaPods](https://cocoapods.org/)や[Carthage](https://github.com/Ca
 - アプリ作って広告を貼る。
 - 完成品のアプリのコードをGumroadで売る。
 
-というわけで、2015年12月25日にスタート。果たして来年のクリスマスまで無事続くのでしょうか…？
+というわけで、2015年12月25日にスタートしました。果たして来年のクリスマスまで無事続くのでしょうか…？
 
