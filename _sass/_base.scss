@@ -44,7 +44,6 @@ table,
 img {
     max-width: 100%;
     vertical-align: middle;
-    border: 1px solid $grey-color-light;
 }
 
 
@@ -232,4 +231,14 @@ th {
 th, td {
   padding: 0.25rem 0.5rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+
+/**
+ * Post
+ */
+
+.post img {
+  border: 1px solid $grey-color-light;
 }
