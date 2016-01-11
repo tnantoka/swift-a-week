@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Functional Swiftを読む"
+title:  "Functional Swiftを読む その1"
 categories: book
 ---
 
