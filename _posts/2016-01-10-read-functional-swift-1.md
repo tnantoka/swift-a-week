@@ -28,34 +28,34 @@ categories: book
 
 ページ | メモ
 -- | --
-p.30 | CIImageのFilterの例はimage引数がcurry化されてる。初めてcurry化がしっくりきたかも。
-p.41 | reduceはfoldlと同じ。
-p.45 | ->A->B->Cはどういう意味？
-p.51 | precedence触ってみる。自分で演算子定義すること少ないから忘れがち。
-p.55 | なぜmapと呼ぶかはお楽しみ。
-p.67 | こういう時はforでいいんだよという例。
-p.71 | guardにbool直接渡すの使っていこう。
-p.72 | Arrayを直接Arbitraryに適合させられないので、ArbitraryInstanceが必要。
-p.84 | mutable使っても問題ないケースもあるよねという例。関数外に影響がない。
-p.88 | バッククォートは何？
-p.91 | Eitherのわかりやすい例。
-p.99 | indirectとは？
-p.100 | let .っていう書き方使ったことなかった。
-p.101 | if caseも使ったことなかった。
-p.107 | decomposeいい感じ。他のコードでも使えそう。
-p.112 | GitHubのサンプル動かす。10章を参考に何か作りたい。
-p.133 | mutatingが必要。
-p.134 | AnyGenerator触ってみる。
-p.137 | noescape忘れがち。
-p.139 | oneとArray、+の使い方。
-p.156 | pure。この章からはコードが多くて手を動かさないとついていけなさそう。
-p.187 | なぜmapっていう同じ名前持ってる？ArrayもOptinalもType constructors。（Haskellの型コンストラクタ）
-p.188 | Functorはよくcontainerと言われるけどRegionみたいなのもFunctor。
-p.191 | addOptinalsの例いい。[...]ってなんだ？ただの省略か。
-p.192 | Monadsの説明良い。
-p.194 | list comprehensions？内包表記のことだった。
-p.197 | よいまとめ。
-p.198 | Haskellやりましょうという話。
+P.30 | CIImageのFilterの例はimage引数がcurry化されてる。初めてcurry化がしっくりきたかも。
+P.41 | reduceはfoldlと同じ。
+P.45 | ->A->B->Cはどういう意味？
+P.51 | precedence触ってみる。自分で演算子定義すること少ないから忘れがち。
+P.55 | なぜmapと呼ぶかはお楽しみ。
+P.67 | こういう時はforでいいんだよという例。
+P.71 | guardにbool直接渡すの使っていこう。
+P.72 | Arrayを直接Arbitraryに適合させられないので、ArbitraryInstanceが必要。
+P.84 | mutable使っても問題ないケースもあるよねという例。関数外に影響がない。
+P.88 | バッククォートは何？
+P.91 | Eitherのわかりやすい例。
+P.99 | indirectとは？
+P.100 | let .っていう書き方使ったことなかった。
+P.101 | if caseも使ったことなかった。
+P.107 | decomposeいい感じ。他のコードでも使えそう。
+P.112 | GitHubのサンプル動かす。10章を参考に何か作りたい。
+P.133 | mutatingが必要。
+P.134 | AnyGenerator触ってみる。
+P.137 | noescape忘れがち。
+P.139 | oneとArray、+の使い方。
+P.156 | pure。この章からはコードが多くて手を動かさないとついていけなさそう。
+P.187 | なぜmapっていう同じ名前持ってる？ArrayもOptinalもType constructors。（Haskellの型コンストラクタ）
+P.188 | Functorはよくcontainerと言われるけどRegionみたいなのもFunctor。
+P.191 | addOptinalsの例いい。[...]ってなんだ？ただの省略か。
+P.192 | Monadsの説明良い。
+P.194 | list comprehensions？内包表記のことだった。
+P.197 | よいまとめ。
+P.198 | Haskellやりましょうという話。
 
 ## 2回目
 
@@ -64,7 +64,7 @@ p.198 | Haskellやりましょうという話。
 
 結果はこちらです。
 
-<https://github.com/tnantoka/swift-a-week/blob/master/works/FunctionalSwift.playground>
+<https://github.com/tnantoka/swift-a-week/blob/gh-pages/works/FunctionalSwift.playground/Contents.swift>
 
 `StringFilter`は、第3章を参考にStringの変換を関数型っぽくしてみたものです。  　
 変換対象である`string`がcurry化されていると考えると、しっくりきました。
@@ -77,7 +77,7 @@ p.198 | Haskellやりましょうという話。
 
 ## 宿題
 
-- 10章を参考に何かを作る
-- 12章のParserを写経
-- Functor、Applicative、Monadなどの理解を深める 
+1. 10章を参考に何かを作る
+2. 12章のParserを写経
+3. Functor、Applicative、Monadなどの理解を深める 
 

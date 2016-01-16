@@ -45,6 +45,17 @@
 					<a href="/about.html">about</a>
 				</li>			
 			{% endif %}
+			{% if page.path == "functional.md" %}
+			<span class="title">
+				<li>
+					<a href="/functional.html">functional</a>
+				</li>
+			</span>			
+			{% else %}
+				<li>
+					<a href="/functional.html">functional</a>
+				</li>			
+			{% endif %}
 		</div>
 		<div class="description"> {{ site.motto }} </div>		
 		<ul class="social-links">
