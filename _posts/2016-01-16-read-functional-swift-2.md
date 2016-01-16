@@ -48,6 +48,7 @@ CGContextScaleCTM(context, 1.0, -1.0)
 1回目読んだ時に途中でついていけなくなったので、コードを書き写しながら読み直しました。
 
 `ArraySlice`と`AnySequence`がパッと読めなかったので、以下のようなコードを書いて試しました。  
+
 `ArraySlice`は配列の一部を抜き出したものということでシンプルです。  
 `AnySequence`は`AnyGenerator`と組み合わせて`Sequecne`をクロージャで作れる、といったところでしょうか。正直なところ、`anyGenerator`だけ使った場合と比較しての利点がわかってないです。
 
@@ -105,7 +106,8 @@ Functor | P.187 | Type constructors — such as optionals or arrays — that sup
 Applicative Functor | P.189 | Any type constructor for which we can define appropriate pure and `<*>` operations is called an applicative functor. 
 Monad | P.192 | a type constructor F is a monad if it defines the following two functions: `func pure<A>(value: A) -> F<A>`, `func flatMap<A, B>(x: F<A>)(f: A -> F<B>) -> F<B>`
 
-そして、今の僕の頭の中を、Swiftを使って説明するとこうなります。
+そして、今の僕の頭の中を、Swiftを使って説明するとこうなります。  
+（誤った記述がある可能性が高いため、ご注意ください）
 
 ## Functor 
 
@@ -124,7 +126,7 @@ func f(num: Int) -> String {
 
 ## Applicative Functor
 
-Functorの強化版。（AppilcativeはFunctorでもあります）  
+Functorの強化版です。（AppilcativeはFunctorでもあります）  
 文脈付きの関数を適用できるFunctorです。
 
 {% highlight swift %}
@@ -160,8 +162,8 @@ pure(curry(+)) <*> num1 <*> num2 // 3, Optional<Int>
 
 ## Monad
 
-Applicative Functorの強化版。（MonadはApplicativeでもあります）  
-普通の値を受け取る関数に、文脈付きの値を渡して文脈付きの結果を得ることができる。
+Applicative Functorの強化版です。（MonadはApplicativeでもあります）  
+普通の値を受け取る関数に、文脈付きの値を渡して文脈付きの結果を得ることができます。
 
 {% highlight swift %}
 let str: String? = "1"
