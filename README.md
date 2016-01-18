@@ -9,7 +9,8 @@ $ jekyll serve -w --future
 ```
 $ git checkout gh-pages
 $ git pull origin gh-pages
-$ git checkout -b week-2
-$ git commit --allow-empty -m "Week 2"
-$ git push origin week-2
+$ WEEK=2
+$ git checkout -b week-$WEEK
+$ git commit --allow-empty -m "Week $WEEK"
+$ git push origin week-$WEEK
 ```
