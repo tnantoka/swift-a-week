@@ -66,7 +66,8 @@ git "file://path/to/framework"
 
 ### Travis CI
 
-以下のように書いたら動きました。  
+以下のように書いたら動きました。
+
 <https://github.com/tnantoka/StringFilter/blob/master/.travis.yml>
 
 ### 参考
