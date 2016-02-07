@@ -94,17 +94,17 @@ JavaScriptを始めた時、`Closure`の概念にとても苦労した覚えが�
 
 用語 | ページ | 引用
 --- | --- | ---
-Functor | P.228 | 関数で写せるもの
-Applicative Functor | P.40 | 「ファンクターの中の関数」で「別のファンクターの中の値」を写す
-Monad | P.282 | 普通の値aを取って文脈付きの値を返す関数に、文脈付きの値m aを渡したい
+Functor | p. 228 | 関数で写せるもの
+Applicative Functor | p. 40 | 「ファンクターの中の関数」で「別のファンクターの中の値」を写す
+Monad | p. 282 | 普通の値aを取って文脈付きの値を返す関数に、文脈付きの値m aを渡したい
 
 本書ではこう述べられています。
 
 用語 | ページ | 引用
 --- | --- | ---
-Functor | P.187 | Type constructors — such as optionals or arrays — that support a map operation are sometimes referred to as functors. 
-Applicative Functor | P.189 | Any type constructor for which we can define appropriate pure and `<*>` operations is called an applicative functor. 
-Monad | P.192 | a type constructor F is a monad if it defines the following two functions: `func pure<A>(value: A) -> F<A>`, `func flatMap<A, B>(x: F<A>)(f: A -> F<B>) -> F<B>`
+Functor | p. 187 | Type constructors — such as optionals or arrays — that support a map operation are sometimes referred to as functors. 
+Applicative Functor | p. 189 | Any type constructor for which we can define appropriate pure and `<*>` operations is called an applicative functor. 
+Monad | p. 192 | a type constructor F is a monad if it defines the following two functions: `func pure<A>(value: A) -> F<A>`, `func flatMap<A, B>(x: F<A>)(f: A -> F<B>) -> F<B>`
 
 そして、今の僕の頭の中を、Swiftを使って説明するとこうなります。  
 （誤った記述がある可能性が高いため、ご注意ください）
