@@ -29,6 +29,6 @@ if UIDevice.currentDevice().userInterfaceIdiom == .Phone
 view.backgroundColor = .redColor()
 {% endhighlight %}
 
-これに気づいた時、今までタイプした'UIColor.'を返してくれーってなりました…。  
+これに気づいた時、今までタイプした`UIColor.`を返してくれーってなりました…。  
 文法の勉強は正確に。
 
