@@ -11,3 +11,5 @@ github_username:  tnantoka
 
 # Build settings
 markdown: kramdown
+
+timezone: "Asia/Tokyo"
