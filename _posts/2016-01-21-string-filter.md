@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Swiftらしく書く練習: StringFilter"
-categories: book
+categories: functional
 ---
 
 [\[Week 2\] Functional Swiftを読む その1](/book/2016/01/10/read-functional-swift-1.html)で、CIImageの例を参考に書いた[String用のFilter](https://github.com/tnantoka/swift-a-week/blob/gh-pages/works/FunctionalSwift.playground/Contents.swift#L7)がわりと題材としてよさそうだったので、ライブラリ化してみました。

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "PlaygroundでとてもシンプルなGenerative Art"
-categories: tips
+categories: example
 ---
 
 一時期Generative Artというものに興味を持って、以下の本を読みました。
