@@ -4,7 +4,7 @@ title:  "Hello Vapor 1: プロジェクト作成からテストまで"
 categories: example
 ---
 
-Swift製のWebフレームワークが早くも乱立していますが、[GitHubで1000スター以上獲得している](https://github.com/search?o=desc&q=swift%20web&s=stars&type=Repositories&utf8=%E2%9C%93)中から、一番deployが手軽そうなVaporに手を出してみます。
+Swift製のWebフレームワークが早くも乱立していますが、[GitHubで1000スター以上獲得している](https://github.com/search?o=desc&q=swift%20web&s=stars&type=Repositories&utf8=%E2%9C%93)中から、一番deployが手軽そうな[Vapor](https://github.com/qutheory/vapor)に手を出してみます。
 
 ## Swiftenvと最新版のSwiftをインストール
 
@@ -171,6 +171,10 @@ Test Suite 'ServerTests' passed at 2016-02-28 00:26:39.491.
 
 これで一応形は整いました。
 次からは簡単なWebサービスに必要そうな機能の実装方法を調べていきたいと思います。
+
+## ソースコード
+
+<https://github.com/tnantoka/swift-a-week/tree/gh-pages/works/HelloVapor>
 
 ## 参考
 

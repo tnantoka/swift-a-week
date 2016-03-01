@@ -26,7 +26,7 @@ class ServerTests: XCTestCase {
 
         let request = Request(
             method: .Get,
-            path: "welcome",
+            path: "/",
             address: nil,
             headers: ["host": "example.com"],
             body: []
