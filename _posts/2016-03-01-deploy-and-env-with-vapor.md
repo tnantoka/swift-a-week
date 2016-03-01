@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Hello Vapor 2: デプロイと環境変数、Public"
+title:  "Hello Vapor 2: デプロイと環境変数"
 categories: example
 ---
 
@@ -46,7 +46,13 @@ $ start HelloVapor
 <http://hello.vapor.swiftaweek.com/>
 
 次に環境変数を表示してみます。
-いろいろやり方はあると思いますが、ひとまず起動スクリプトで設定しています。
+いろいろやり方はあると思いますが、ひとまず起動スクリプトで設定します。
+
+`env.yml`はこのように書いて、`.gitignore`しています。
+{% highlight sh %}
+env:
+  - { name: "TEST", value: "test" }
+{% endhighlight %}
 
 <http://env.vapor.swiftaweek.com/>
 
