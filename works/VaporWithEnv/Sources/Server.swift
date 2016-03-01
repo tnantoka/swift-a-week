@@ -7,17 +7,19 @@
 //
 
 import Vapor
+import Foundation
 
 struct Server {
     let app = Application()
     
     init() {
-        app.get("/") { request in
-            return "Hello"
+        app.get("") { request in
+            let test = NSProcessInfo.processInfo().environment["TEST"] ?? ""
+            return "Hello \(test)"
         }
     }
     
     func start() {
-        app.start(port: 8080)
+        app.start(port: 8081)
     }
 }

@@ -1,0 +1,10 @@
+description "{{ item }}"
+
+start on startup
+
+{% for e in env %}
+env {{ e.name }}={{ e.value }}
+{% endfor %}
+
+exec /var/www/{{ item }}/.build/debug/{{ item }} --workDir=/var/www/{{ item }}
+
