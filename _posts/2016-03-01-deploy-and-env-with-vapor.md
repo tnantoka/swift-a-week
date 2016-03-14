@@ -34,12 +34,14 @@ playbookはこちらにあります。
 最後に[HelloVapor](/2016/02/28/hello-vapor.html)をデプロイします。
 ここもAnsibleや他のツールでやってもよいんですが、ひとまず手動で行います。
 
+{% highlight sh %}
 $ ./clean.sh; scp -r ../HelloVapor vapor:/var/www/
 $ ssh vaypor
 $ cd /var/www
 $ cd HelloVapor
 $ ./build.sh
 $ start HelloVapor
+{% endhighlight %}
 
 これで以下のURLでHelloVaporにアクセスできるようになりました。
 

@@ -5,6 +5,7 @@
     examples:  
       - { name: "hello", port: "8080" }
       - { name: "env", port: "8081" }
+      - { name: "session", port: "8082" }
   vars_files:
     - env.yml
   tasks:
@@ -27,6 +28,7 @@
       with_items:
         - "HelloVapor"
         - "VaporWithEnv"
+        - "VaporWithSession"
 
     - copy: src=.profile dest=/root/.profile owner=root group=root mode=0644
     - git: repo=https://github.com/kylef/swiftenv.git dest=/root/.swiftenv
