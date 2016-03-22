@@ -1,11 +1,13 @@
 ---
 - hosts: all
   vars:
-    swift_version: "swift-DEVELOPMENT-SNAPSHOT-2016-02-25-a"
+    #swift_version: "swift-DEVELOPMENT-SNAPSHOT-2016-02-25-a"
+    swift_version: "swift-DEVELOPMENT-SNAPSHOT-2016-03-01-a"
     examples:  
       - { name: "hello", port: "8080" }
       - { name: "env", port: "8081" }
       - { name: "session", port: "8082" }
+      - { name: "my-lib", port: "8083" }
   vars_files:
     - env.yml
   tasks:
@@ -29,6 +31,7 @@
         - "HelloVapor"
         - "VaporWithEnv"
         - "VaporWithSession"
+        - "VaporWithMyLib"
 
     - copy: src=.profile dest=/root/.profile owner=root group=root mode=0644
     - git: repo=https://github.com/kylef/swiftenv.git dest=/root/.swiftenv
