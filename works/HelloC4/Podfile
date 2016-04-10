@@ -1,0 +1,6 @@
+use_frameworks!
+
+target 'HelloC4' do
+  pod 'C4'
+end
+
