@@ -28,6 +28,7 @@
 		9BE971DF1CBA9F7E0073A8DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BE971E51CBAA0330073A8DF /* HelloC4.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = HelloC4.playground; sourceTree = "<group>"; };
 		9BF8EB951CC122C900901730 /* C4Graffiti.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = C4Graffiti.playground; sourceTree = "<group>"; };
+		9BF8EC831CD4FD2000901730 /* C4Glow.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = C4Glow.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 		9BE971C71CBA9F7E0073A8DF = {
 			isa = PBXGroup;
 			children = (
+				9BF8EC831CD4FD2000901730 /* C4Glow.playground */,
 				9BF8EB951CC122C900901730 /* C4Graffiti.playground */,
 				9BE971E51CBAA0330073A8DF /* HelloC4.playground */,
 				9BE971D21CBA9F7E0073A8DF /* HelloC4 */,
