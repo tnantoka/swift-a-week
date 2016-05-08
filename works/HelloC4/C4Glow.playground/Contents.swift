@@ -53,7 +53,7 @@ class GlowView2: GlowView {
             CGContextTranslateCTM(ctx, rect.size.width / 2, rect.size.height / 2)
             CGContextScaleCTM(ctx, 0.9, 0.9)
 
-//            CGContextSetLineWidth(ctx, 8.0)
+            CGContextSetLineWidth(ctx, 8.0)
             CGContextSetStrokeColorWithColor(ctx, UIColor.whiteColor().CGColor)
 
             CGContextAddPath(ctx, shadow.path!.CGPath)
@@ -78,6 +78,7 @@ class GlowView2: GlowView {
             
             let inverted = UIGraphicsGetImageFromCurrentImageContext()
             CGContextClearRect(ctx2, rect)
+        
             
             CGContextSaveGState(ctx2)
             CGContextSetFillColorWithColor(ctx2, shadow.color!.CGColor)
@@ -136,7 +137,7 @@ class WorkSpace: CanvasController {
         view.addSubview(glowView)
         
 //        let anim = ViewAnimation(duration: 1.0) {
-//            View(view: shadowView).transform = Transform.makeRotation(M_PI)
+//            View(view: glowView).transform = Transform.makeRotation(M_PI)
 //        }
 //        anim.repeats = true
 //        anim.animate()
@@ -152,7 +153,7 @@ class WorkSpace: CanvasController {
         polygon.fillColor = nil
         polygon.strokeColor = Color(UIColor.whiteColor())
         polygon.lineWidth = 1.0
-        
+
         return polygon
     }
     
