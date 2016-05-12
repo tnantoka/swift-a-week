@@ -4,8 +4,7 @@ title:  "Functional Swiftを読む その2"
 categories: book
 ---
 
-[先週](/book/2016/01/10/read-functional-swift-1.html)の宿題を解消すべく、引き続き[Functional Swift](http://px.a8.net/svt/ejp?a8mat=1NWF4Y+EFRJQY+249K+BWGDT&a8ejpredirect=http%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB00UY3K04O%2F%3Ftag%3Da8-affi-205968-22)を読みました。
-
+[先週](/book/2016/01/10/read-functional-swift-1.html)の宿題を解消すべく、引き続き[Functional Swift](http://px.a8.net/svt/ejp?a8mat=1NWF4Y+EFRJQY+249K+BWGDT&a8ejpredirect=http%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F3000480056%2F%3Ftag%3Da8-affi-255514-22)を読みました。
 
 ## 宿題1: 10章を参考に何かを作る
 
@@ -186,8 +185,8 @@ str.flatMap(f) // 1, Optionam<Int>
 
 Functional Swift、今後も読み返すことになるであろう、良い本でした。
 
-<table cellpadding="0" cellspacing="0" border="0" style=" border-style: none; width:170px;"><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px;"><a href="http://px.a8.net/svt/ejp?a8mat=1NWF4Y+EFRJQY+249K+BWGDT&a8ejpredirect=http%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB00UY3K04O%2F%3Ftag%3Da8-affi-255514-22" target="_blank"><img border="0" alt="" src="http://ecx.images-amazon.com/images/I/31rBSsCp5GL._SS160_.jpg" /></a></td></tr><tr style="border-style:none;"></tr></table>
-<img border="0" width="1" height="1" src="http://www12.a8.net/0.gif?a8mat=1NWF4Y+EFRJQY+249K+BWGDT" alt="">
+<table cellpadding="0" cellspacing="0" border="0" style=" border-style: none; width:170px;"><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px;"><a href="http://px.a8.net/svt/ejp?a8mat=1NWF4Y+EFRJQY+249K+BWGDT&a8ejpredirect=http%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F3000480056%2F%3Ftag%3Da8-affi-255514-22" target="_blank"><img border="0" alt="" src="http://ecx.images-amazon.com/images/I/31rBSsCp5GL._SS160_.jpg" /></a></td></tr><tr style="border-style:none;"></tr></table>
+<img border="0" width="1" height="1" src="http://www16.a8.net/0.gif?a8mat=1NWF4Y+EFRJQY+249K+BWGDT" alt="">
 
 
 # 参考
