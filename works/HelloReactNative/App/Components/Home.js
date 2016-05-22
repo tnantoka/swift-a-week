@@ -11,12 +11,24 @@ import HelloWorld from './HelloWorld';
 import Flexbox from './Flexbox';
 import Counter from './Counter';
 import Swift from './Swift';
+import Storage from './Storage';
+import Alert from './Alert';
+import Web from './Web';
+import Animation from './Animation';
+import Fetch from './Fetch';
+import Images from './Images';
 
 const DATA = [
   { title: "Hello, World!", component: HelloWorld },
   { title: "Flexbox", component: Flexbox },
   { title: "Counter (Flux)", component: Counter },
   { title: "Swift", component: Swift },
+  { title: "AsyncStorage", component: Storage },
+  { title: "AlertIOS", component: Alert },
+  { title: "WebView", component: Web },
+  { title: "Animated", component: Animation },
+  { title: "Fetch", component: Fetch },
+  { title: "Images", component: Images },
 ];
 
 class Home extends Component {
