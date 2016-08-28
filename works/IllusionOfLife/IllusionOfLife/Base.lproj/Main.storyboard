@@ -18,10 +18,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MXj-wS-C2c">
-                                <rect key="frame" x="20" y="601" width="335" height="46"/>
+                                <rect key="frame" x="20" y="563" width="335" height="84"/>
                                 <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXk-7h-EUp">
+                                        <rect key="frame" x="100" y="48" width="135" height="30"/>
+                                        <state key="normal" title="Squash and Stretch"/>
+                                        <connections>
+                                            <action selector="squashDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pj5-lw-oja"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJR-Ij-cdt">
-                                        <rect key="frame" x="148" y="8" width="39" height="30"/>
+                                        <rect key="frame" x="148" y="10" width="39" height="30"/>
                                         <state key="normal" title="Jump"/>
                                         <connections>
                                             <action selector="jumpDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x1E-8x-DCG"/>
@@ -30,11 +37,11 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="Y9G-Ma-Lm2"/>
+                                    <constraint firstAttribute="height" constant="84" id="Y9G-Ma-Lm2"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9pZ-tV-Pym" customClass="SKView">
-                                <rect key="frame" x="20" y="28" width="335" height="565"/>
+                                <rect key="frame" x="20" y="28" width="335" height="527"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>

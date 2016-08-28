@@ -20,6 +20,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         skView.showsFPS = true
+//        skView.showsPhysics = true
         
         scene = Scene(size: skView.bounds.size)
         skView.presentScene(scene)
@@ -31,6 +32,10 @@ class ViewController: UIViewController {
     }
     @IBAction func jumpDidTap(sender: AnyObject) {
         scene.jump()
+    }
+    
+    @IBAction func squashDidTap(sender: AnyObject) {
+        scene.squash()
     }
 }
 
