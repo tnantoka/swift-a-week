@@ -79,6 +79,20 @@ class Scene: SKScene, SKPhysicsContactDelegate {
         playerNode.runAction(sequence)
     }
     
+    func anticipation() {
+        let actions = [
+            SKAction.scaleXTo(1.5, y: 0.5, duration: 0.2),
+            SKAction.waitForDuration(0.1),
+            SKAction.scaleXTo(1.0, y: 1.0, duration: 0.1),
+            SKAction.runBlock {
+                self.squash()
+            },
+            ]
+        
+        let sequence = SKAction.sequence(actions)
+        playerNode.runAction(sequence)
+    }
+    
     // MARK: - SKPhysicsContactDelegate
     
     func didBeginContact(contact: SKPhysicsContact) {

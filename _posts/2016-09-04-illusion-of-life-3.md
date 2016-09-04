@@ -1,16 +1,14 @@
 ---
 layout: post
-title: "不自然にジャンプする球体 その2"
+title: "不自然にジャンプする球体 その3"
 categories: book
 ---
 
-前回の続きです。
+今回は、Anticipation（予備動作）を加えました。
 
-[12 basic principles of animation](https://en.wikipedia.org/wiki/12_basic_principles_of_animation) のSquash and Stretch（潰しと伸ばし）を取り入れました。
+![](/images/posts/illusion-of-life/anticipation.gif)
 
-![](/images/posts/illusion-of-life/squash_and_stretch.gif)
-
-少しだけ不自然じゃなくなりました。
+最初に少し手を加えるだけで、かなり効果がある気がします。
 
 ## 参考
 

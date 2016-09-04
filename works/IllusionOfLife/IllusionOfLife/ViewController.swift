@@ -30,12 +30,17 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     @IBAction func jumpDidTap(sender: AnyObject) {
         scene.jump()
     }
     
     @IBAction func squashDidTap(sender: AnyObject) {
         scene.squash()
+    }
+    
+    @IBAction func anticipationDidTap(sender: AnyObject) {
+        scene.anticipation()
     }
 }
 
