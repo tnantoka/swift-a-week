@@ -42,5 +42,9 @@ class ViewController: UIViewController {
     @IBAction func anticipationDidTap(sender: AnyObject) {
         scene.anticipation()
     }
+    
+    @IBAction func exaggerationDidTap(sender: AnyObject) {
+        scene.exaggeration()
+    }
 }
 

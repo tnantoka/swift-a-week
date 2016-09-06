@@ -42,6 +42,7 @@ class Scene: SKScene, SKPhysicsContactDelegate {
     
     private func  addShapeNode() {
         playerNode = SKShapeNode(circleOfRadius: 30.0)
+        playerNode.lineWidth = 2.0
         
         playerNode.position = CGPoint(x: size.width / 2.0, y: size.height / 2.0)
         
@@ -62,15 +63,16 @@ class Scene: SKScene, SKPhysicsContactDelegate {
         playerNode.physicsBody?.applyImpulse(vector)
     }
     
-    func squash() {
+    func squash(min: CGFloat = 0.5, max: CGFloat = 1.5) {
+        guard !jumping else { return }
         jump()
         
         let actions = [
-            SKAction.scaleXTo(0.5, y: 1.5, duration: 0.2),
+            SKAction.scaleXTo(min, y: max, duration: 0.2),
             SKAction.waitForDuration(0.4),
             SKAction.scaleXTo(1.0, y: 1.0, duration: 0.2),
             SKAction.waitForDuration(0.2),
-            SKAction.scaleXTo(1.5, y: 0.5, duration: 0.2),
+            SKAction.scaleXTo(max, y: min, duration: 0.2),
             SKAction.waitForDuration(0.1),
             SKAction.scaleXTo(1.0, y: 1.0, duration: 0.1),
             ]
@@ -79,18 +81,28 @@ class Scene: SKScene, SKPhysicsContactDelegate {
         playerNode.runAction(sequence)
     }
     
-    func anticipation() {
+    func anticipation(min: CGFloat = 0.5, max: CGFloat = 1.5) {
+        guard !jumping else { return }
+        jumping = true
+
         let actions = [
-            SKAction.scaleXTo(1.5, y: 0.5, duration: 0.2),
+            SKAction.scaleXTo(max, y: min, duration: 0.2),
             SKAction.waitForDuration(0.1),
             SKAction.scaleXTo(1.0, y: 1.0, duration: 0.1),
             SKAction.runBlock {
-                self.squash()
+                self.squash(min, max: max)
             },
             ]
+        for action in actions {
+            action.timingMode = SKActionTimingMode.EaseInEaseOut
+        }
         
         let sequence = SKAction.sequence(actions)
         playerNode.runAction(sequence)
+    }
+    
+    func exaggeration() {
+        anticipation(0.25, max: 2.5)
     }
     
     // MARK: - SKPhysicsContactDelegate

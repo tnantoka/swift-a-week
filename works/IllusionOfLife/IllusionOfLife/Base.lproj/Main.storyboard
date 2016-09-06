@@ -18,20 +18,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MXj-wS-C2c">
-                                <rect key="frame" x="20" y="525" width="335" height="122"/>
+                                <rect key="frame" x="20" y="487" width="335" height="160"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJR-Ij-cdt">
                                         <rect key="frame" x="148" y="8" width="39" height="30"/>
                                         <state key="normal" title="Jump"/>
                                         <connections>
                                             <action selector="jumpDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x1E-8x-DCG"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJE-2c-jOb">
-                                        <rect key="frame" x="126" y="84" width="82" height="30"/>
-                                        <state key="normal" title="Anticipation"/>
-                                        <connections>
-                                            <action selector="anticipationDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QSM-he-tpo"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXk-7h-EUp">
@@ -41,14 +34,28 @@
                                             <action selector="squashDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pj5-lw-oja"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0N-Vn-oPz">
+                                        <rect key="frame" x="122" y="122" width="90" height="30"/>
+                                        <state key="normal" title="Exaggeration"/>
+                                        <connections>
+                                            <action selector="exaggerationDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f9R-an-xCn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJE-2c-jOb">
+                                        <rect key="frame" x="126" y="84" width="82" height="30"/>
+                                        <state key="normal" title="Anticipation"/>
+                                        <connections>
+                                            <action selector="anticipationDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QSM-he-tpo"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="122" id="Y9G-Ma-Lm2"/>
+                                    <constraint firstAttribute="height" constant="160" id="Y9G-Ma-Lm2"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9pZ-tV-Pym" customClass="SKView">
-                                <rect key="frame" x="20" y="28" width="335" height="489"/>
+                                <rect key="frame" x="20" y="28" width="335" height="451"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
