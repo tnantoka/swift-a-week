@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "IconCreatorをSwift 3化"
-categories: book
+categories: tips
 ---
 
 自分が作ったSwiftのプログラムで一番使ってるかもしれない、<https://github.com/tnantoka/IconCreator> をXcode 8で動くようにしました。
