@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2EA6E82B41122D9831D2D0BC /* Pods_HelloReSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF05A7A7A8CAE8FF9B748B2 /* Pods_HelloReSwiftTests.framework */; };
+		63CBA4B4F5F498D293547C67 /* Pods_HelloReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44692D0174225189752A7092 /* Pods_HelloReSwift.framework */; };
+		9BDA56FA1DC39B090044143E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDA56F91DC39B090044143E /* AppDelegate.swift */; };
+		9BDA56FC1DC39B090044143E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDA56FB1DC39B090044143E /* ViewController.swift */; };
+		9BDA56FF1DC39B090044143E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BDA56FD1DC39B090044143E /* Main.storyboard */; };
+		9BDA57011DC39B090044143E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BDA57001DC39B090044143E /* Assets.xcassets */; };
+		9BDA57041DC39B090044143E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BDA57021DC39B090044143E /* LaunchScreen.storyboard */; };
+		9BDA570F1DC39B090044143E /* HelloReSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDA570E1DC39B090044143E /* HelloReSwiftTests.swift */; };
+		9BDA571A1DC3A0280044143E /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDA57191DC3A0280044143E /* AppState.swift */; };
+		9BDA571C1DC3A0440044143E /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDA571B1DC3A0440044143E /* Actions.swift */; };
+		9BDA571E1DC3A0670044143E /* CounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDA571D1DC3A0670044143E /* CounterReducer.swift */; };
+		9BDA57201DC4CB750044143E /* CounterReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDA571F1DC4CB750044143E /* CounterReducerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9BDA570B1DC39B090044143E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BDA56EE1DC39B090044143E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BDA56F51DC39B090044143E;
+			remoteInfo = HelloReSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2EA4629AC6BD374B08DA4498 /* Pods-HelloReSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloReSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloReSwiftTests/Pods-HelloReSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		3CF05A7A7A8CAE8FF9B748B2 /* Pods_HelloReSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloReSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44692D0174225189752A7092 /* Pods_HelloReSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloReSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BDA56F61DC39B090044143E /* HelloReSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloReSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BDA56F91DC39B090044143E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9BDA56FB1DC39B090044143E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9BDA56FE1DC39B090044143E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9BDA57001DC39B090044143E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9BDA57031DC39B090044143E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9BDA57051DC39B090044143E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BDA570A1DC39B090044143E /* HelloReSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloReSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BDA570E1DC39B090044143E /* HelloReSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloReSwiftTests.swift; sourceTree = "<group>"; };
+		9BDA57101DC39B090044143E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BDA57191DC3A0280044143E /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		9BDA571B1DC3A0440044143E /* Actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
+		9BDA571D1DC3A0670044143E /* CounterReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterReducer.swift; sourceTree = "<group>"; };
+		9BDA571F1DC4CB750044143E /* CounterReducerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterReducerTests.swift; sourceTree = "<group>"; };
+		A5352B9283FEB8339ADBCF49 /* Pods-HelloReSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloReSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloReSwift/Pods-HelloReSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		AA40234CB7642217D4001C18 /* Pods-HelloReSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloReSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloReSwift/Pods-HelloReSwift.release.xcconfig"; sourceTree = "<group>"; };
+		E6EA0C429E7D3F8E12854758 /* Pods-HelloReSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloReSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloReSwiftTests/Pods-HelloReSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9BDA56F31DC39B090044143E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63CBA4B4F5F498D293547C67 /* Pods_HelloReSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BDA57071DC39B090044143E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EA6E82B41122D9831D2D0BC /* Pods_HelloReSwiftTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FCB23EABB2F0014EE048FE3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5352B9283FEB8339ADBCF49 /* Pods-HelloReSwift.debug.xcconfig */,
+				AA40234CB7642217D4001C18 /* Pods-HelloReSwift.release.xcconfig */,
+				E6EA0C429E7D3F8E12854758 /* Pods-HelloReSwiftTests.debug.xcconfig */,
+				2EA4629AC6BD374B08DA4498 /* Pods-HelloReSwiftTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8092608942477BF9F90EF55C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44692D0174225189752A7092 /* Pods_HelloReSwift.framework */,
+				3CF05A7A7A8CAE8FF9B748B2 /* Pods_HelloReSwiftTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9BDA56ED1DC39B090044143E = {
+			isa = PBXGroup;
+			children = (
+				9BDA56F81DC39B090044143E /* HelloReSwift */,
+				9BDA570D1DC39B090044143E /* HelloReSwiftTests */,
+				9BDA56F71DC39B090044143E /* Products */,
+				3FCB23EABB2F0014EE048FE3 /* Pods */,
+				8092608942477BF9F90EF55C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9BDA56F71DC39B090044143E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9BDA56F61DC39B090044143E /* HelloReSwift.app */,
+				9BDA570A1DC39B090044143E /* HelloReSwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9BDA56F81DC39B090044143E /* HelloReSwift */ = {
+			isa = PBXGroup;
+			children = (
+				9BDA56F91DC39B090044143E /* AppDelegate.swift */,
+				9BDA56FB1DC39B090044143E /* ViewController.swift */,
+				9BDA56FD1DC39B090044143E /* Main.storyboard */,
+				9BDA57001DC39B090044143E /* Assets.xcassets */,
+				9BDA57021DC39B090044143E /* LaunchScreen.storyboard */,
+				9BDA57051DC39B090044143E /* Info.plist */,
+				9BDA57191DC3A0280044143E /* AppState.swift */,
+				9BDA571B1DC3A0440044143E /* Actions.swift */,
+				9BDA571D1DC3A0670044143E /* CounterReducer.swift */,
+			);
+			path = HelloReSwift;
+			sourceTree = "<group>";
+		};
+		9BDA570D1DC39B090044143E /* HelloReSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				9BDA570E1DC39B090044143E /* HelloReSwiftTests.swift */,
+				9BDA57101DC39B090044143E /* Info.plist */,
+				9BDA571F1DC4CB750044143E /* CounterReducerTests.swift */,
+			);
+			path = HelloReSwiftTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9BDA56F51DC39B090044143E /* HelloReSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BDA57131DC39B090044143E /* Build configuration list for PBXNativeTarget "HelloReSwift" */;
+			buildPhases = (
+				B9EC63837131F103C49AE1F3 /* [CP] Check Pods Manifest.lock */,
+				9BDA56F21DC39B090044143E /* Sources */,
+				9BDA56F31DC39B090044143E /* Frameworks */,
+				9BDA56F41DC39B090044143E /* Resources */,
+				824E287EFB0ABD1F2D27B248 /* [CP] Embed Pods Frameworks */,
+				E0A5A39BEFC17E0C8395414C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloReSwift;
+			productName = HelloReSwift;
+			productReference = 9BDA56F61DC39B090044143E /* HelloReSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9BDA57091DC39B090044143E /* HelloReSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BDA57161DC39B090044143E /* Build configuration list for PBXNativeTarget "HelloReSwiftTests" */;
+			buildPhases = (
+				236811598C5514846E82E6CF /* [CP] Check Pods Manifest.lock */,
+				9BDA57061DC39B090044143E /* Sources */,
+				9BDA57071DC39B090044143E /* Frameworks */,
+				9BDA57081DC39B090044143E /* Resources */,
+				5C1DE381419815EE732A8466 /* [CP] Embed Pods Frameworks */,
+				B02FCC5DCAFBBA21D563D706 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BDA570C1DC39B090044143E /* PBXTargetDependency */,
+			);
+			name = HelloReSwiftTests;
+			productName = HelloReSwiftTests;
+			productReference = 9BDA570A1DC39B090044143E /* HelloReSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9BDA56EE1DC39B090044143E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = tnantoka;
+				TargetAttributes = {
+					9BDA56F51DC39B090044143E = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					9BDA57091DC39B090044143E = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9BDA56F51DC39B090044143E;
+					};
+				};
+			};
+			buildConfigurationList = 9BDA56F11DC39B090044143E /* Build configuration list for PBXProject "HelloReSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9BDA56ED1DC39B090044143E;
+			productRefGroup = 9BDA56F71DC39B090044143E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9BDA56F51DC39B090044143E /* HelloReSwift */,
+				9BDA57091DC39B090044143E /* HelloReSwiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9BDA56F41DC39B090044143E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BDA57041DC39B090044143E /* LaunchScreen.storyboard in Resources */,
+				9BDA57011DC39B090044143E /* Assets.xcassets in Resources */,
+				9BDA56FF1DC39B090044143E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BDA57081DC39B090044143E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		236811598C5514846E82E6CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5C1DE381419815EE732A8466 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloReSwiftTests/Pods-HelloReSwiftTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		824E287EFB0ABD1F2D27B248 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloReSwift/Pods-HelloReSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B02FCC5DCAFBBA21D563D706 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloReSwiftTests/Pods-HelloReSwiftTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9EC63837131F103C49AE1F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E0A5A39BEFC17E0C8395414C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloReSwift/Pods-HelloReSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9BDA56F21DC39B090044143E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BDA571A1DC3A0280044143E /* AppState.swift in Sources */,
+				9BDA571E1DC3A0670044143E /* CounterReducer.swift in Sources */,
+				9BDA571C1DC3A0440044143E /* Actions.swift in Sources */,
+				9BDA56FC1DC39B090044143E /* ViewController.swift in Sources */,
+				9BDA56FA1DC39B090044143E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BDA57061DC39B090044143E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BDA570F1DC39B090044143E /* HelloReSwiftTests.swift in Sources */,
+				9BDA57201DC4CB750044143E /* CounterReducerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9BDA570C1DC39B090044143E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9BDA56F51DC39B090044143E /* HelloReSwift */;
+			targetProxy = 9BDA570B1DC39B090044143E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9BDA56FD1DC39B090044143E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BDA56FE1DC39B090044143E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9BDA57021DC39B090044143E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BDA57031DC39B090044143E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9BDA57111DC39B090044143E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9BDA57121DC39B090044143E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9BDA57141DC39B090044143E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5352B9283FEB8339ADBCF49 /* Pods-HelloReSwift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HelloReSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tnantoka.HelloReSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9BDA57151DC39B090044143E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA40234CB7642217D4001C18 /* Pods-HelloReSwift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HelloReSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tnantoka.HelloReSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		9BDA57171DC39B090044143E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6EA0C429E7D3F8E12854758 /* Pods-HelloReSwiftTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HelloReSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tnantoka.HelloReSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloReSwift.app/HelloReSwift";
+			};
+			name = Debug;
+		};
+		9BDA57181DC39B090044143E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EA4629AC6BD374B08DA4498 /* Pods-HelloReSwiftTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HelloReSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tnantoka.HelloReSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloReSwift.app/HelloReSwift";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9BDA56F11DC39B090044143E /* Build configuration list for PBXProject "HelloReSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BDA57111DC39B090044143E /* Debug */,
+				9BDA57121DC39B090044143E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BDA57131DC39B090044143E /* Build configuration list for PBXNativeTarget "HelloReSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BDA57141DC39B090044143E /* Debug */,
+				9BDA57151DC39B090044143E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BDA57161DC39B090044143E /* Build configuration list for PBXNativeTarget "HelloReSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BDA57171DC39B090044143E /* Debug */,
+				9BDA57181DC39B090044143E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9BDA56EE1DC39B090044143E /* Project object */;
+}
