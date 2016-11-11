@@ -1,0 +1,94 @@
+#extend("base")
+
+#export("head") {
+	<title>My App</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700,300" rel="stylesheet">
+	<link rel="stylesheet" href="/styles/app.css">
+}
+
+#export("body") {
+    <div class="message">
+        #raw() {
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 -5 48 60" enable-background="new 0 0 48 48" xml:space="preserve" id="droplet">
+                <defs>
+                    <linearGradient id="linear" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%"   stop-color="#F7CAC9"/>
+                        <stop offset="100%" stop-color="#92A8D1"/>
+                    </linearGradient>
+                </defs>
+                <path stroke="url(#linear)" fill="white" fill-opacity="0" stroke-width="3" d="M24.8,0.9c-0.4-0.5-1.2-0.5-1.6,0C19.8,5.3,7.1,22.5,7.1,30.6c0,9.3,7.6,16.9,16.9,16.9s16.9-7.6,16.9-16.9  C40.9,22.5,28.2,5.3,24.8,0.9z"/>
+            </svg>
+        }
+        <h1>#(message)</h1>
+    </div>
+
+    <div id="posts"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.2/react.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.2/react-dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.38/browser.min.js"></script>
+    <script type="text/babel">
+        class PostList extends React.Component {
+            constructor(props) {
+                super(props)
+                this.state = {
+                    posts: [],
+                    content: '',
+                }
+            }
+            componentDidMount() {
+                this.load()
+            }
+            load() {
+                fetch('/posts')
+                .then(response => response.json())
+                .then(json => {
+                    this.setState({ posts: json })
+                })
+            }
+            handleSubmit(event) {
+                event.preventDefault()
+                const headers = new Headers()
+                headers.append('Content-Type', 'application/json')
+                fetch('/posts', {
+                    method: 'POST',
+                    headers: headers,
+                    body: JSON.stringify({ content: this.state.content }),
+                })
+                .then(() => this.load())
+                this.setState({ content: '' })
+            }
+            handleChange(event) {
+                this.setState({ content: event.target.value })
+            }
+            handleDelete(id) {
+                fetch('/posts/' + id, {
+                    method: 'DELETE',
+                })
+                .then(() => this.load())
+            }
+            render() {
+                return (
+                    <ul>
+                        {this.state.posts.map(post =>
+                            <li>
+                                <a href={ `/posts/${post.id}` }>{ post.content }</a>
+                                &nbsp;
+                                <a onClick={ () => this.handleDelete(post.id) } style={{ cursor: 'pointer' }}>&times;</a>
+                            </li>
+                        )}
+                        <li>
+                            <form onSubmit={ this.handleSubmit.bind(this) }>
+                                <input type="text" value={ this.state.content } onChange={ this.handleChange.bind(this) } />
+                                <input type="submit" value="Add" />
+                            </form>
+                        </li>
+                    </ul>
+                )
+            }
+        }
+
+        ReactDOM.render(<PostList />, document.getElementById('posts'))
+    </script>
+}
