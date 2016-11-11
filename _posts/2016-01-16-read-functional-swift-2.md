@@ -140,7 +140,7 @@ func <*><A, B>(transform: (A -> B)?, value: A?) -> B? {
 }
 
 let flag: Bool? = true
-pure(!) <*> flag // false, Optional<Int>
+pure(!) <*> flag // false, Optional<Bool>
 
 let num1: Int? = 1
 let num2: Int? = 2
