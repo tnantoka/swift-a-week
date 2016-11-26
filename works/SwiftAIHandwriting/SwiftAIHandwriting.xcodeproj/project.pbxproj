@@ -1,0 +1,384 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9BE91EB01DE9B42E0099F4D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE91EAF1DE9B42E0099F4D4 /* AppDelegate.swift */; };
+		9BE91EB51DE9B42E0099F4D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BE91EB31DE9B42E0099F4D4 /* Main.storyboard */; };
+		9BE91EB71DE9B42E0099F4D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BE91EB61DE9B42E0099F4D4 /* Assets.xcassets */; };
+		9BE91EBA1DE9B42E0099F4D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BE91EB81DE9B42E0099F4D4 /* LaunchScreen.storyboard */; };
+		9BE91EC21DE9B55E0099F4D4 /* HandwritingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE91EC11DE9B55E0099F4D4 /* HandwritingViewController.swift */; };
+		9BE91EC61DE9B5BD0099F4D4 /* FFNN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE91EC31DE9B5BD0099F4D4 /* FFNN.swift */; };
+		9BE91EC71DE9B5BD0099F4D4 /* FFNN+Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE91EC41DE9B5BD0099F4D4 /* FFNN+Storage.swift */; };
+		9BE91EC81DE9B5BD0099F4D4 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE91EC51DE9B5BD0099F4D4 /* Storage.swift */; };
+		9BE91ECA1DE9B5D60099F4D4 /* HandwritingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE91EC91DE9B5D60099F4D4 /* HandwritingView.swift */; };
+		9BE91ED01DE9B6980099F4D4 /* APBorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE91ECB1DE9B6980099F4D4 /* APBorderView.swift */; };
+		9BE91ED11DE9B6980099F4D4 /* APConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE91ECC1DE9B6980099F4D4 /* APConstraints.swift */; };
+		9BE91ED21DE9B6980099F4D4 /* APMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE91ECD1DE9B6980099F4D4 /* APMath.swift */; };
+		9BE91ED31DE9B6980099F4D4 /* APMultilineLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE91ECE1DE9B6980099F4D4 /* APMultilineLabel.swift */; };
+		9BE91ED41DE9B6980099F4D4 /* APSpringButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE91ECF1DE9B6980099F4D4 /* APSpringButton.swift */; };
+		9BE91ED61DE9B6CB0099F4D4 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE91ED51DE9B6CB0099F4D4 /* Colors.swift */; };
+		9BE91ED81DE9B6DB0099F4D4 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE91ED71DE9B6DB0099F4D4 /* Fonts.swift */; };
+		9BE91EDA1DE9B6F70099F4D4 /* handwriting-ffnn in Resources */ = {isa = PBXBuildFile; fileRef = 9BE91ED91DE9B6F70099F4D4 /* handwriting-ffnn */; };
+		9BE91EE21DE9B7140099F4D4 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9BE91EDC1DE9B7140099F4D4 /* OpenSans-Bold.ttf */; };
+		9BE91EE31DE9B7140099F4D4 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9BE91EDD1DE9B7140099F4D4 /* OpenSans-Italic.ttf */; };
+		9BE91EE41DE9B7140099F4D4 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9BE91EDE1DE9B7140099F4D4 /* OpenSans-Light.ttf */; };
+		9BE91EE51DE9B7140099F4D4 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9BE91EDF1DE9B7140099F4D4 /* OpenSans-LightItalic.ttf */; };
+		9BE91EE61DE9B7140099F4D4 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9BE91EE01DE9B7140099F4D4 /* OpenSans-Semibold.ttf */; };
+		9BE91EE71DE9B7140099F4D4 /* OpenSans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9BE91EE11DE9B7140099F4D4 /* OpenSans.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9BE91EAC1DE9B42E0099F4D4 /* SwiftAIHandwriting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAIHandwriting.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BE91EAF1DE9B42E0099F4D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9BE91EB41DE9B42E0099F4D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9BE91EB61DE9B42E0099F4D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9BE91EB91DE9B42E0099F4D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9BE91EBB1DE9B42E0099F4D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BE91EC11DE9B55E0099F4D4 /* HandwritingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandwritingViewController.swift; sourceTree = "<group>"; };
+		9BE91EC31DE9B5BD0099F4D4 /* FFNN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFNN.swift; sourceTree = "<group>"; };
+		9BE91EC41DE9B5BD0099F4D4 /* FFNN+Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FFNN+Storage.swift"; sourceTree = "<group>"; };
+		9BE91EC51DE9B5BD0099F4D4 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		9BE91EC91DE9B5D60099F4D4 /* HandwritingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandwritingView.swift; sourceTree = "<group>"; };
+		9BE91ECB1DE9B6980099F4D4 /* APBorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APBorderView.swift; sourceTree = "<group>"; };
+		9BE91ECC1DE9B6980099F4D4 /* APConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APConstraints.swift; sourceTree = "<group>"; };
+		9BE91ECD1DE9B6980099F4D4 /* APMath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APMath.swift; sourceTree = "<group>"; };
+		9BE91ECE1DE9B6980099F4D4 /* APMultilineLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APMultilineLabel.swift; sourceTree = "<group>"; };
+		9BE91ECF1DE9B6980099F4D4 /* APSpringButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APSpringButton.swift; sourceTree = "<group>"; };
+		9BE91ED51DE9B6CB0099F4D4 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		9BE91ED71DE9B6DB0099F4D4 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		9BE91ED91DE9B6F70099F4D4 /* handwriting-ffnn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "handwriting-ffnn"; sourceTree = "<group>"; };
+		9BE91EDC1DE9B7140099F4D4 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		9BE91EDD1DE9B7140099F4D4 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		9BE91EDE1DE9B7140099F4D4 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		9BE91EDF1DE9B7140099F4D4 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		9BE91EE01DE9B7140099F4D4 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		9BE91EE11DE9B7140099F4D4 /* OpenSans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = OpenSans.ttf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9BE91EA91DE9B42E0099F4D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9BE91EA31DE9B42E0099F4D4 = {
+			isa = PBXGroup;
+			children = (
+				9BE91EAE1DE9B42E0099F4D4 /* SwiftAIHandwriting */,
+				9BE91EAD1DE9B42E0099F4D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9BE91EAD1DE9B42E0099F4D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9BE91EAC1DE9B42E0099F4D4 /* SwiftAIHandwriting.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9BE91EAE1DE9B42E0099F4D4 /* SwiftAIHandwriting */ = {
+			isa = PBXGroup;
+			children = (
+				9BE91EAF1DE9B42E0099F4D4 /* AppDelegate.swift */,
+				9BE91EC11DE9B55E0099F4D4 /* HandwritingViewController.swift */,
+				9BE91EC91DE9B5D60099F4D4 /* HandwritingView.swift */,
+				9BE91EC31DE9B5BD0099F4D4 /* FFNN.swift */,
+				9BE91EC41DE9B5BD0099F4D4 /* FFNN+Storage.swift */,
+				9BE91EC51DE9B5BD0099F4D4 /* Storage.swift */,
+				9BE91ECB1DE9B6980099F4D4 /* APBorderView.swift */,
+				9BE91ECC1DE9B6980099F4D4 /* APConstraints.swift */,
+				9BE91ECD1DE9B6980099F4D4 /* APMath.swift */,
+				9BE91ECE1DE9B6980099F4D4 /* APMultilineLabel.swift */,
+				9BE91ECF1DE9B6980099F4D4 /* APSpringButton.swift */,
+				9BE91ED51DE9B6CB0099F4D4 /* Colors.swift */,
+				9BE91ED71DE9B6DB0099F4D4 /* Fonts.swift */,
+				9BE91EDB1DE9B7140099F4D4 /* Fonts */,
+				9BE91ED91DE9B6F70099F4D4 /* handwriting-ffnn */,
+				9BE91EB31DE9B42E0099F4D4 /* Main.storyboard */,
+				9BE91EB61DE9B42E0099F4D4 /* Assets.xcassets */,
+				9BE91EB81DE9B42E0099F4D4 /* LaunchScreen.storyboard */,
+				9BE91EBB1DE9B42E0099F4D4 /* Info.plist */,
+			);
+			path = SwiftAIHandwriting;
+			sourceTree = "<group>";
+		};
+		9BE91EDB1DE9B7140099F4D4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9BE91EDC1DE9B7140099F4D4 /* OpenSans-Bold.ttf */,
+				9BE91EDD1DE9B7140099F4D4 /* OpenSans-Italic.ttf */,
+				9BE91EDE1DE9B7140099F4D4 /* OpenSans-Light.ttf */,
+				9BE91EDF1DE9B7140099F4D4 /* OpenSans-LightItalic.ttf */,
+				9BE91EE01DE9B7140099F4D4 /* OpenSans-Semibold.ttf */,
+				9BE91EE11DE9B7140099F4D4 /* OpenSans.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9BE91EAB1DE9B42E0099F4D4 /* SwiftAIHandwriting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BE91EBE1DE9B42E0099F4D4 /* Build configuration list for PBXNativeTarget "SwiftAIHandwriting" */;
+			buildPhases = (
+				9BE91EA81DE9B42E0099F4D4 /* Sources */,
+				9BE91EA91DE9B42E0099F4D4 /* Frameworks */,
+				9BE91EAA1DE9B42E0099F4D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftAIHandwriting;
+			productName = SwiftAIHandwriting;
+			productReference = 9BE91EAC1DE9B42E0099F4D4 /* SwiftAIHandwriting.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9BE91EA41DE9B42E0099F4D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = tnantoka;
+				TargetAttributes = {
+					9BE91EAB1DE9B42E0099F4D4 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9BE91EA71DE9B42E0099F4D4 /* Build configuration list for PBXProject "SwiftAIHandwriting" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9BE91EA31DE9B42E0099F4D4;
+			productRefGroup = 9BE91EAD1DE9B42E0099F4D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9BE91EAB1DE9B42E0099F4D4 /* SwiftAIHandwriting */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9BE91EAA1DE9B42E0099F4D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BE91EDA1DE9B6F70099F4D4 /* handwriting-ffnn in Resources */,
+				9BE91EBA1DE9B42E0099F4D4 /* LaunchScreen.storyboard in Resources */,
+				9BE91EE41DE9B7140099F4D4 /* OpenSans-Light.ttf in Resources */,
+				9BE91EE71DE9B7140099F4D4 /* OpenSans.ttf in Resources */,
+				9BE91EE61DE9B7140099F4D4 /* OpenSans-Semibold.ttf in Resources */,
+				9BE91EB71DE9B42E0099F4D4 /* Assets.xcassets in Resources */,
+				9BE91EE31DE9B7140099F4D4 /* OpenSans-Italic.ttf in Resources */,
+				9BE91EE21DE9B7140099F4D4 /* OpenSans-Bold.ttf in Resources */,
+				9BE91EE51DE9B7140099F4D4 /* OpenSans-LightItalic.ttf in Resources */,
+				9BE91EB51DE9B42E0099F4D4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9BE91EA81DE9B42E0099F4D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BE91ED41DE9B6980099F4D4 /* APSpringButton.swift in Sources */,
+				9BE91ED61DE9B6CB0099F4D4 /* Colors.swift in Sources */,
+				9BE91ED81DE9B6DB0099F4D4 /* Fonts.swift in Sources */,
+				9BE91ED01DE9B6980099F4D4 /* APBorderView.swift in Sources */,
+				9BE91ECA1DE9B5D60099F4D4 /* HandwritingView.swift in Sources */,
+				9BE91EC61DE9B5BD0099F4D4 /* FFNN.swift in Sources */,
+				9BE91EC71DE9B5BD0099F4D4 /* FFNN+Storage.swift in Sources */,
+				9BE91EC21DE9B55E0099F4D4 /* HandwritingViewController.swift in Sources */,
+				9BE91EB01DE9B42E0099F4D4 /* AppDelegate.swift in Sources */,
+				9BE91EC81DE9B5BD0099F4D4 /* Storage.swift in Sources */,
+				9BE91ED11DE9B6980099F4D4 /* APConstraints.swift in Sources */,
+				9BE91ED21DE9B6980099F4D4 /* APMath.swift in Sources */,
+				9BE91ED31DE9B6980099F4D4 /* APMultilineLabel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9BE91EB31DE9B42E0099F4D4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BE91EB41DE9B42E0099F4D4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9BE91EB81DE9B42E0099F4D4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BE91EB91DE9B42E0099F4D4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9BE91EBC1DE9B42E0099F4D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9BE91EBD1DE9B42E0099F4D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9BE91EBF1DE9B42E0099F4D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SwiftAIHandwriting/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tnantoka.SwiftAIHandwriting;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9BE91EC01DE9B42E0099F4D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SwiftAIHandwriting/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tnantoka.SwiftAIHandwriting;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9BE91EA71DE9B42E0099F4D4 /* Build configuration list for PBXProject "SwiftAIHandwriting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BE91EBC1DE9B42E0099F4D4 /* Debug */,
+				9BE91EBD1DE9B42E0099F4D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BE91EBE1DE9B42E0099F4D4 /* Build configuration list for PBXNativeTarget "SwiftAIHandwriting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BE91EBF1DE9B42E0099F4D4 /* Debug */,
+				9BE91EC01DE9B42E0099F4D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9BE91EA41DE9B42E0099F4D4 /* Project object */;
+}
