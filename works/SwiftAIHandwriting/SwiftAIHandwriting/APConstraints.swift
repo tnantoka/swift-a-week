@@ -233,7 +233,7 @@ public extension UIView {
         removeAllConstraints()
         
         // Check if the super-superview is a UICollectionViewCell or UITableViewCell and adjust superview to super-superview if necessary.
-        if let superclass: AnyClass? = self.superview?.superview?.superclass {
+        if let superclass = self.superview?.superview?.superclass {
             if superclass === UICollectionViewCell.self || superclass === UITableViewCell.self {
                 parent = self.superview!.superview!
             }
@@ -371,7 +371,7 @@ public extension UIView {
             return print("Warning: \(self) has not been added to a superview. Constraints cannot be updated.")
         }
         
-        if let superclass: AnyClass? = self.superview?.superview?.superclass {
+        if let superclass = self.superview?.superview?.superclass {
             if superclass === UICollectionViewCell.self || superclass === UITableViewCell.self {
                 parent = self.superview!.superview!
             }
@@ -573,7 +573,7 @@ public extension UIView {
         var parent = self.superview!
         
         // Checks if constraining within a TableView/CollectionView cell
-        if let superclass: AnyClass? = self.superview?.superview?.superclass {
+        if let superclass = self.superview?.superview?.superclass {
             if superclass === UICollectionViewCell.self || superclass === UITableViewCell.self {
                 parent = self.superview!.superview!
             }

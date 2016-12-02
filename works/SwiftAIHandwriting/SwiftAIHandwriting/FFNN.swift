@@ -320,8 +320,8 @@ public final class FFNN {
         // Train forever until the desired error threshold is met
         while true {
             for (index, input) in inputs.enumerated() {
-                try self.update(inputs: input)
-                try self.backpropagate(answer: answers[index])
+                let _ = try self.update(inputs: input)
+                let _ = try self.backpropagate(answer: answers[index])
             }
             // Calculate the total error of the validation set after each epoch
             let errorSum: Float = try self.error(testInputs, expected: testAnswers)
