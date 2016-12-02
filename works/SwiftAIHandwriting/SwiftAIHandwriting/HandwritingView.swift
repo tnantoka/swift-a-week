@@ -87,12 +87,6 @@ class HandwritingView: UIView {
             Constraint.tt.of(self, offset: 15),
             Constraint.hw.of(self, offset: -20))
         
-//        self.canvasContainer.constrainUsing(constraints: [
-//            Constraint.ll : (of: self, offset: 10),
-//            Constraint.rr : (of: self, offset: -10),
-//            Constraint.tt : (of: self, offset: 15),
-//            Constraint.hw : (of: self, offset: -20)])
-        
         self.canvas.fillSuperview()
         
         imageView.addConstraints(
@@ -101,23 +95,11 @@ class HandwritingView: UIView {
             Constraint.tb.of(canvasContainer, offset: 15),
             Constraint.bb.of(self, offset: -15))
         
-//        self.imageView.constrainUsing(constraints: [
-//            Constraint.ll : (of: self, offset: 10),
-//            Constraint.rcx : (of: self, offset: -7),
-//            Constraint.tb : (of: self.canvasContainer, offset: 15),
-//            Constraint.bt : (of: self.buttonContainer, offset: -15)])
-        
         outputContainer.addConstraints(
             Constraint.lcx.of(self, offset: 7),
             Constraint.rr.of(self, offset: -10),
             Constraint.tb.of(canvasContainer, offset: 15),
             Constraint.bb.of(self, offset: -15))
-        
-//        self.outputContainer.constrainUsing(constraints: [
-//            Constraint.lcx : (of: self, offset: 7),
-//            Constraint.rr : (of: self, offset: -10),
-//            Constraint.tb : (of: self.canvasContainer, offset: 15),
-//            Constraint.bt : (of: self.buttonContainer, offset: -15)])
         
         self.outputLabel.centerInSuperview()
         
@@ -125,10 +107,6 @@ class HandwritingView: UIView {
             Constraint.rr.of(outputContainer),
             Constraint.bb.of(outputContainer))
         
-//        self.confidenceLabel.constrainUsing(constraints: [
-//            Constraint.rr : (of: self.outputContainer, offset: 0),
-//            Constraint.bb : (of: self.outputContainer, offset: 0)])
-
         super.updateConstraints()
     }
     
