@@ -29,12 +29,7 @@ class HandwritingViewController: UIViewController {
         super.viewDidLoad()
         
         let url = Bundle.main.url(forResource: "handwriting-ffnn", withExtension: nil)!
-        self.network = FFNN.fromFile(url)
-
-        self.handwritingView.startPauseButton.addTarget(self, action: #selector(startPause), for: .touchUpInside)
-        self.handwritingView.clearButton.addTarget(self, action: #selector(resetTapped), for: .touchUpInside)
-        self.handwritingView.infoButton.addTarget(self, action: #selector(infoTapped), for: .touchUpInside)
-        
+        self.network = FFNN.fromFile(url)        
     }
     
     override func viewDidAppear(_ animated: Bool) {
