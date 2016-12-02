@@ -285,3 +285,12 @@ extension HandwritingViewController {
     }
 
 }
+
+extension Double {
+    /// Returns the receiver's string representation, truncated to the given number of decimal places.
+    /// - parameter decimalPlaces: The maximum number of allowed decimal places
+    public func toString(decimalPlaces: Int) -> String {
+        let power = pow(10.0, Double(decimalPlaces))
+        return "\( Darwin.round(power * self) / power)"
+    }
+}

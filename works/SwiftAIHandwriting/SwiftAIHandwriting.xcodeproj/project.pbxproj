@@ -18,7 +18,6 @@
 		9BE91ECA1DE9B5D60099F4D4 /* HandwritingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE91EC91DE9B5D60099F4D4 /* HandwritingView.swift */; };
 		9BE91ED01DE9B6980099F4D4 /* APBorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE91ECB1DE9B6980099F4D4 /* APBorderView.swift */; };
 		9BE91ED11DE9B6980099F4D4 /* APConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE91ECC1DE9B6980099F4D4 /* APConstraints.swift */; };
-		9BE91ED21DE9B6980099F4D4 /* APMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE91ECD1DE9B6980099F4D4 /* APMath.swift */; };
 		9BE91ED31DE9B6980099F4D4 /* APMultilineLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE91ECE1DE9B6980099F4D4 /* APMultilineLabel.swift */; };
 		9BE91ED41DE9B6980099F4D4 /* APSpringButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE91ECF1DE9B6980099F4D4 /* APSpringButton.swift */; };
 		9BE91ED61DE9B6CB0099F4D4 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE91ED51DE9B6CB0099F4D4 /* Colors.swift */; };
@@ -46,7 +45,6 @@
 		9BE91EC91DE9B5D60099F4D4 /* HandwritingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandwritingView.swift; sourceTree = "<group>"; };
 		9BE91ECB1DE9B6980099F4D4 /* APBorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APBorderView.swift; sourceTree = "<group>"; };
 		9BE91ECC1DE9B6980099F4D4 /* APConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APConstraints.swift; sourceTree = "<group>"; };
-		9BE91ECD1DE9B6980099F4D4 /* APMath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APMath.swift; sourceTree = "<group>"; };
 		9BE91ECE1DE9B6980099F4D4 /* APMultilineLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APMultilineLabel.swift; sourceTree = "<group>"; };
 		9BE91ECF1DE9B6980099F4D4 /* APSpringButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APSpringButton.swift; sourceTree = "<group>"; };
 		9BE91ED51DE9B6CB0099F4D4 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -98,7 +96,6 @@
 				9BE91EC51DE9B5BD0099F4D4 /* Storage.swift */,
 				9BE91ECB1DE9B6980099F4D4 /* APBorderView.swift */,
 				9BE91ECC1DE9B6980099F4D4 /* APConstraints.swift */,
-				9BE91ECD1DE9B6980099F4D4 /* APMath.swift */,
 				9BE91ECE1DE9B6980099F4D4 /* APMultilineLabel.swift */,
 				9BE91ECF1DE9B6980099F4D4 /* APSpringButton.swift */,
 				9BE91ED51DE9B6CB0099F4D4 /* Colors.swift */,
@@ -216,7 +213,6 @@
 				9BE91EB01DE9B42E0099F4D4 /* AppDelegate.swift in Sources */,
 				9BE91EC81DE9B5BD0099F4D4 /* Storage.swift in Sources */,
 				9BE91ED11DE9B6980099F4D4 /* APConstraints.swift in Sources */,
-				9BE91ED21DE9B6980099F4D4 /* APMath.swift in Sources */,
 				9BE91ED31DE9B6980099F4D4 /* APMultilineLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,6 +373,7 @@
 				9BE91EC01DE9B42E0099F4D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
