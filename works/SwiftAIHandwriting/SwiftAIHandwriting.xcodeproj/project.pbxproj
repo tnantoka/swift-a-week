@@ -16,7 +16,6 @@
 		9BE91EC71DE9B5BD0099F4D4 /* FFNN+Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE91EC41DE9B5BD0099F4D4 /* FFNN+Storage.swift */; };
 		9BE91EC81DE9B5BD0099F4D4 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE91EC51DE9B5BD0099F4D4 /* Storage.swift */; };
 		9BE91ECA1DE9B5D60099F4D4 /* HandwritingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE91EC91DE9B5D60099F4D4 /* HandwritingView.swift */; };
-		9BE91ED01DE9B6980099F4D4 /* APBorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE91ECB1DE9B6980099F4D4 /* APBorderView.swift */; };
 		9BE91ED11DE9B6980099F4D4 /* APConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE91ECC1DE9B6980099F4D4 /* APConstraints.swift */; };
 		9BE91ED41DE9B6980099F4D4 /* APSpringButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE91ECF1DE9B6980099F4D4 /* APSpringButton.swift */; };
 		9BE91ED61DE9B6CB0099F4D4 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE91ED51DE9B6CB0099F4D4 /* Colors.swift */; };
@@ -42,7 +41,6 @@
 		9BE91EC41DE9B5BD0099F4D4 /* FFNN+Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FFNN+Storage.swift"; sourceTree = "<group>"; };
 		9BE91EC51DE9B5BD0099F4D4 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		9BE91EC91DE9B5D60099F4D4 /* HandwritingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandwritingView.swift; sourceTree = "<group>"; };
-		9BE91ECB1DE9B6980099F4D4 /* APBorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APBorderView.swift; sourceTree = "<group>"; };
 		9BE91ECC1DE9B6980099F4D4 /* APConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APConstraints.swift; sourceTree = "<group>"; };
 		9BE91ECF1DE9B6980099F4D4 /* APSpringButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APSpringButton.swift; sourceTree = "<group>"; };
 		9BE91ED51DE9B6CB0099F4D4 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -92,7 +90,6 @@
 				9BE91EC31DE9B5BD0099F4D4 /* FFNN.swift */,
 				9BE91EC41DE9B5BD0099F4D4 /* FFNN+Storage.swift */,
 				9BE91EC51DE9B5BD0099F4D4 /* Storage.swift */,
-				9BE91ECB1DE9B6980099F4D4 /* APBorderView.swift */,
 				9BE91ECC1DE9B6980099F4D4 /* APConstraints.swift */,
 				9BE91ECF1DE9B6980099F4D4 /* APSpringButton.swift */,
 				9BE91ED51DE9B6CB0099F4D4 /* Colors.swift */,
@@ -202,7 +199,6 @@
 				9BE91ED41DE9B6980099F4D4 /* APSpringButton.swift in Sources */,
 				9BE91ED61DE9B6CB0099F4D4 /* Colors.swift in Sources */,
 				9BE91ED81DE9B6DB0099F4D4 /* Fonts.swift in Sources */,
-				9BE91ED01DE9B6980099F4D4 /* APBorderView.swift in Sources */,
 				9BE91ECA1DE9B5D60099F4D4 /* HandwritingView.swift in Sources */,
 				9BE91EC61DE9B5BD0099F4D4 /* FFNN.swift in Sources */,
 				9BE91EC71DE9B5BD0099F4D4 /* FFNN+Storage.swift in Sources */,
