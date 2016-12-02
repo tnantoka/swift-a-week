@@ -62,11 +62,11 @@ class HandwritingView: UIView {
         
         self.outputLabel.textColor = .black
         self.outputLabel.textAlignment = .center
-        self.outputLabel.font = UIFont.swiftFontOfSize(100)
+        self.outputLabel.font = UIFont.systemFont(ofSize: 100.0)
         
         self.confidenceLabel.textColor = .black
         self.confidenceLabel.textAlignment = .right
-        self.confidenceLabel.font = UIFont.swiftFontOfSize(15)
+        self.confidenceLabel.font = UIFont.systemFont(ofSize: 15.0)
         
         self.imageView.backgroundColor = UIColor.white
         self.imageView.layer.cornerRadius = 4

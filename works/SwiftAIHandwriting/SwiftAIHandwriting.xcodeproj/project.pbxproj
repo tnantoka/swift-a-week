@@ -18,14 +18,7 @@
 		9BE91ECA1DE9B5D60099F4D4 /* HandwritingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE91EC91DE9B5D60099F4D4 /* HandwritingView.swift */; };
 		9BE91ED11DE9B6980099F4D4 /* APConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE91ECC1DE9B6980099F4D4 /* APConstraints.swift */; };
 		9BE91ED41DE9B6980099F4D4 /* APSpringButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE91ECF1DE9B6980099F4D4 /* APSpringButton.swift */; };
-		9BE91ED81DE9B6DB0099F4D4 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE91ED71DE9B6DB0099F4D4 /* Fonts.swift */; };
 		9BE91EDA1DE9B6F70099F4D4 /* handwriting-ffnn in Resources */ = {isa = PBXBuildFile; fileRef = 9BE91ED91DE9B6F70099F4D4 /* handwriting-ffnn */; };
-		9BE91EE21DE9B7140099F4D4 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9BE91EDC1DE9B7140099F4D4 /* OpenSans-Bold.ttf */; };
-		9BE91EE31DE9B7140099F4D4 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9BE91EDD1DE9B7140099F4D4 /* OpenSans-Italic.ttf */; };
-		9BE91EE41DE9B7140099F4D4 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9BE91EDE1DE9B7140099F4D4 /* OpenSans-Light.ttf */; };
-		9BE91EE51DE9B7140099F4D4 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9BE91EDF1DE9B7140099F4D4 /* OpenSans-LightItalic.ttf */; };
-		9BE91EE61DE9B7140099F4D4 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9BE91EE01DE9B7140099F4D4 /* OpenSans-Semibold.ttf */; };
-		9BE91EE71DE9B7140099F4D4 /* OpenSans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9BE91EE11DE9B7140099F4D4 /* OpenSans.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,14 +35,7 @@
 		9BE91EC91DE9B5D60099F4D4 /* HandwritingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandwritingView.swift; sourceTree = "<group>"; };
 		9BE91ECC1DE9B6980099F4D4 /* APConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APConstraints.swift; sourceTree = "<group>"; };
 		9BE91ECF1DE9B6980099F4D4 /* APSpringButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APSpringButton.swift; sourceTree = "<group>"; };
-		9BE91ED71DE9B6DB0099F4D4 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		9BE91ED91DE9B6F70099F4D4 /* handwriting-ffnn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "handwriting-ffnn"; sourceTree = "<group>"; };
-		9BE91EDC1DE9B7140099F4D4 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
-		9BE91EDD1DE9B7140099F4D4 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
-		9BE91EDE1DE9B7140099F4D4 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
-		9BE91EDF1DE9B7140099F4D4 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
-		9BE91EE01DE9B7140099F4D4 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
-		9BE91EE11DE9B7140099F4D4 /* OpenSans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = OpenSans.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +76,6 @@
 				9BE91EC51DE9B5BD0099F4D4 /* Storage.swift */,
 				9BE91ECC1DE9B6980099F4D4 /* APConstraints.swift */,
 				9BE91ECF1DE9B6980099F4D4 /* APSpringButton.swift */,
-				9BE91ED71DE9B6DB0099F4D4 /* Fonts.swift */,
-				9BE91EDB1DE9B7140099F4D4 /* Fonts */,
 				9BE91ED91DE9B6F70099F4D4 /* handwriting-ffnn */,
 				9BE91EB31DE9B42E0099F4D4 /* Main.storyboard */,
 				9BE91EB61DE9B42E0099F4D4 /* Assets.xcassets */,
@@ -99,19 +83,6 @@
 				9BE91EBB1DE9B42E0099F4D4 /* Info.plist */,
 			);
 			path = SwiftAIHandwriting;
-			sourceTree = "<group>";
-		};
-		9BE91EDB1DE9B7140099F4D4 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				9BE91EDC1DE9B7140099F4D4 /* OpenSans-Bold.ttf */,
-				9BE91EDD1DE9B7140099F4D4 /* OpenSans-Italic.ttf */,
-				9BE91EDE1DE9B7140099F4D4 /* OpenSans-Light.ttf */,
-				9BE91EDF1DE9B7140099F4D4 /* OpenSans-LightItalic.ttf */,
-				9BE91EE01DE9B7140099F4D4 /* OpenSans-Semibold.ttf */,
-				9BE91EE11DE9B7140099F4D4 /* OpenSans.ttf */,
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,13 +146,7 @@
 			files = (
 				9BE91EDA1DE9B6F70099F4D4 /* handwriting-ffnn in Resources */,
 				9BE91EBA1DE9B42E0099F4D4 /* LaunchScreen.storyboard in Resources */,
-				9BE91EE41DE9B7140099F4D4 /* OpenSans-Light.ttf in Resources */,
-				9BE91EE71DE9B7140099F4D4 /* OpenSans.ttf in Resources */,
-				9BE91EE61DE9B7140099F4D4 /* OpenSans-Semibold.ttf in Resources */,
 				9BE91EB71DE9B42E0099F4D4 /* Assets.xcassets in Resources */,
-				9BE91EE31DE9B7140099F4D4 /* OpenSans-Italic.ttf in Resources */,
-				9BE91EE21DE9B7140099F4D4 /* OpenSans-Bold.ttf in Resources */,
-				9BE91EE51DE9B7140099F4D4 /* OpenSans-LightItalic.ttf in Resources */,
 				9BE91EB51DE9B42E0099F4D4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,7 +159,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BE91ED41DE9B6980099F4D4 /* APSpringButton.swift in Sources */,
-				9BE91ED81DE9B6DB0099F4D4 /* Fonts.swift in Sources */,
 				9BE91ECA1DE9B5D60099F4D4 /* HandwritingView.swift in Sources */,
 				9BE91EC61DE9B5BD0099F4D4 /* FFNN.swift in Sources */,
 				9BE91EC71DE9B5BD0099F4D4 /* FFNN+Storage.swift in Sources */,
