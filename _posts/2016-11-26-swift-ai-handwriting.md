@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Swift AIのExamplesから手書き認識の部分だけ持ってくる"
-categories: library
+categories: example
 ---
 
 指で書いた数字を認識する機能の実装が必要になりました。
@@ -16,8 +16,6 @@ categories: library
 - APMath.swift
 - APMultilineLabel.swift
 - APSpringButton.swift
-- AppDelegate.swift
-- AppIcon.appiconset
 - Colors.swift
 - FFNN+Storage.swift
 - FFNN.swift
