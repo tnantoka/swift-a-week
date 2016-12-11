@@ -1,8 +1,9 @@
 //
 //  HandwritingView.swift
-//  Swift-AI-iOS
+//  SwiftAIHandwriting
 //
-//  Created by Collin Hundley on 12/3/15.
+//  Created by Tatsuya Tobioka on 12/6/16.
+//  Copyright © 2016 tnantoka. All rights reserved.
 //
 
 import UIKit
@@ -10,15 +11,41 @@ import UIKit
 class HandwritingView: UIView {
     
     let canvasContainer = UIView()
-    let canvas = UIImageView()
-    let snapshotBox = UIView()
+    let canvas1 = HandwritingCanvasView()
+    let canvas2 = HandwritingCanvasView()
     let outputContainer = UIView()
     let outputLabel = UILabel()
     let confidenceLabel = UILabel()
     let imageView = UIImageView()
     
+    let brushWidth: CGFloat = 20
+    
+    // Drawing state variables
+    fileprivate var lastDrawPoint = CGPoint.zero
+    fileprivate var boundingBox: CGRect?
+    fileprivate var swiped = false
+    fileprivate var drawing = false
+    fileprivate var timer = Timer()
+    
+    var network: FFNN!
+    
     convenience init() {
         self.init(frame: CGRect.zero)
+        
+        let url = Bundle.main.url(forResource: "handwriting-ffnn", withExtension: nil)!
+        self.network = FFNN.fromFile(url)
+
+        [canvas1, canvas2].forEach { canvas in
+            canvas.onOutput = { output, confidence in
+                self.updateOutputLabels(output, confidence: confidence)
+            }
+            canvas.onScan = { character in
+                self.imageView.image = character
+            }
+            canvas.onError = {
+                self.outputLabel.text = "Error"
+            }
+        }
     }
     
     override init(frame: CGRect) {
@@ -32,63 +59,67 @@ class HandwritingView: UIView {
     
     func configureSubviews() {
         // Add Subviews
-        self.addSubviews(self.canvasContainer, self.outputContainer, self.imageView)
-        self.canvasContainer.addSubviews(self.canvas, self.snapshotBox)
-        self.outputContainer.addSubviews(self.outputLabel, self.confidenceLabel)
+        addSubviews(canvasContainer, outputContainer, imageView)
+        canvasContainer.addSubviews(canvas1, canvas2)
+        outputContainer.addSubviews(outputLabel, confidenceLabel)
         
         // Style View
-        self.backgroundColor = UIColor.lightGray
+        backgroundColor = UIColor.lightGray
         
         // Style Subviews
-        self.canvasContainer.backgroundColor = .white
-        self.canvasContainer.layer.cornerRadius = 3
-        self.canvasContainer.layer.shadowColor = UIColor.gray.cgColor
-        self.canvasContainer.layer.shadowOpacity = 0.4
-        self.canvasContainer.layer.shadowOffset = CGSize(width: 1, height: 3)
+        canvasContainer.layer.cornerRadius = 3
+        canvasContainer.layer.shadowColor = UIColor.gray.cgColor
+        canvasContainer.layer.shadowOpacity = 0.4
+        canvasContainer.layer.shadowOffset = CGSize(width: 1, height: 3)
         
-        self.canvas.backgroundColor = .clear
+        canvas1.backgroundColor = .white
+        canvas2.backgroundColor = .white
         
-        self.snapshotBox.backgroundColor = UIColor.clear
-        self.snapshotBox.layer.borderColor = UIColor.green.cgColor
-        self.snapshotBox.layer.borderWidth = 2
-        self.snapshotBox.layer.cornerRadius = 6
-        self.snapshotBox.alpha = 0
+        outputContainer.backgroundColor = .white
+        outputContainer.layer.cornerRadius = 4
+        outputContainer.layer.shadowColor = UIColor.gray.cgColor
+        outputContainer.layer.shadowOpacity = 0.3
+        outputContainer.layer.shadowOffset = CGSize(width: 1, height: 3)
         
-        self.outputContainer.backgroundColor = .white
-        self.outputContainer.layer.cornerRadius = 4
-        self.outputContainer.layer.shadowColor = UIColor.gray.cgColor
-        self.outputContainer.layer.shadowOpacity = 0.3
-        self.outputContainer.layer.shadowOffset = CGSize(width: 1, height: 3)
+        outputLabel.textColor = .black
+        outputLabel.textAlignment = .center
+        outputLabel.font = UIFont.systemFont(ofSize: 100.0)
         
-        self.outputLabel.textColor = .black
-        self.outputLabel.textAlignment = .center
-        self.outputLabel.font = UIFont.systemFont(ofSize: 100.0)
+        confidenceLabel.textColor = .black
+        confidenceLabel.textAlignment = .right
+        confidenceLabel.font = UIFont.systemFont(ofSize: 15.0)
         
-        self.confidenceLabel.textColor = .black
-        self.confidenceLabel.textAlignment = .right
-        self.confidenceLabel.font = UIFont.systemFont(ofSize: 15.0)
-        
-        self.imageView.backgroundColor = UIColor.white
-        self.imageView.layer.cornerRadius = 4
-        self.imageView.layer.shadowColor = UIColor.gray.cgColor
-        self.imageView.layer.shadowOpacity = 0.3
-        self.imageView.layer.shadowOffset = CGSize(width: 1, height: 3)
-        self.imageView.contentMode = .scaleAspectFit
+        imageView.backgroundColor = UIColor.white
+        imageView.layer.cornerRadius = 4
+        imageView.layer.shadowColor = UIColor.gray.cgColor
+        imageView.layer.shadowOpacity = 0.3
+        imageView.layer.shadowOffset = CGSize(width: 1, height: 3)
+        imageView.contentMode = .scaleAspectFit
     }
     
     override func updateConstraints() {
         
         // Configure Subviews
-        self.configureSubviews()
+        configureSubviews()
         
         // Add Constraints
         canvasContainer.addConstraints(
             Constraint.llrr.of(self, offset: 10),
-            Constraint.tt.of(self, offset: 15),
+            Constraint.tt.of(self, offset: 20),
             Constraint.hw.of(self, offset: -20))
         
-        self.canvas.fillSuperview()
+        canvas1.addConstraints(
+            Constraint.ll.of(canvasContainer),
+            Constraint.rcx.of(canvasContainer, offset: -1),
+            Constraint.tt.of(canvasContainer),
+            Constraint.bb.of(canvasContainer))
         
+        canvas2.addConstraints(
+            Constraint.lcx.of(canvasContainer, offset: 1),
+            Constraint.rr.of(canvasContainer),
+            Constraint.tt.of(canvasContainer),
+            Constraint.bb.of(canvasContainer))
+
         imageView.addConstraints(
             Constraint.ll.of(self, offset: 10),
             Constraint.rcx.of(self, offset: -7),
@@ -101,7 +132,7 @@ class HandwritingView: UIView {
             Constraint.tb.of(canvasContainer, offset: 15),
             Constraint.bb.of(self, offset: -15))
         
-        self.outputLabel.centerInSuperview()
+        outputLabel.centerInSuperview()
         
         confidenceLabel.addConstraints(
             Constraint.rr.of(outputContainer),
@@ -110,11 +141,16 @@ class HandwritingView: UIView {
         super.updateConstraints()
     }
     
-    // Note: Shadow paths defined here where views have frames
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        self.canvasContainer.layer.shadowPath = UIBezierPath(roundedRect: self.canvasContainer.bounds, cornerRadius: self.canvasContainer.layer.cornerRadius).cgPath
-        self.outputContainer.layer.shadowPath = UIBezierPath(roundedRect: self.outputContainer.bounds, cornerRadius: self.outputContainer.layer.cornerRadius).cgPath
-        self.imageView.layer.shadowPath = UIBezierPath(roundedRect: self.imageView.bounds, cornerRadius: self.imageView.layer.cornerRadius).cgPath
+    fileprivate func updateOutputLabels(_ output: String, confidence: String) {
+        UIView.animate(withDuration: 0.1, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0, options: [], animations: { () -> Void in
+            self.outputLabel.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
+            self.outputLabel.text = output
+            self.confidenceLabel.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
+            self.confidenceLabel.text = confidence
+        }, completion: nil)
+        UIView.animate(withDuration: 0.3, delay: 0.1, usingSpringWithDamping: 0.7, initialSpringVelocity: 0, options: [], animations: { () -> Void in
+            self.outputLabel.transform = CGAffineTransform.identity
+            self.confidenceLabel.transform = CGAffineTransform.identity
+        }, completion: nil)
     }
 }

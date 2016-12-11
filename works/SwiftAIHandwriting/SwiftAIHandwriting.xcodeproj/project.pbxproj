@@ -15,9 +15,10 @@
 		9BE91EC61DE9B5BD0099F4D4 /* FFNN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE91EC31DE9B5BD0099F4D4 /* FFNN.swift */; };
 		9BE91EC71DE9B5BD0099F4D4 /* FFNN+Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE91EC41DE9B5BD0099F4D4 /* FFNN+Storage.swift */; };
 		9BE91EC81DE9B5BD0099F4D4 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE91EC51DE9B5BD0099F4D4 /* Storage.swift */; };
-		9BE91ECA1DE9B5D60099F4D4 /* HandwritingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE91EC91DE9B5D60099F4D4 /* HandwritingView.swift */; };
+		9BE91ECA1DE9B5D60099F4D4 /* HandwritingCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE91EC91DE9B5D60099F4D4 /* HandwritingCanvasView.swift */; };
 		9BE91ED11DE9B6980099F4D4 /* APConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE91ECC1DE9B6980099F4D4 /* APConstraints.swift */; };
 		9BE91EDA1DE9B6F70099F4D4 /* handwriting-ffnn in Resources */ = {isa = PBXBuildFile; fileRef = 9BE91ED91DE9B6F70099F4D4 /* handwriting-ffnn */; };
+		9BE91F1C1DF6EB2D0099F4D4 /* HandwritingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE91F1B1DF6EB2D0099F4D4 /* HandwritingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,9 +32,10 @@
 		9BE91EC31DE9B5BD0099F4D4 /* FFNN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFNN.swift; sourceTree = "<group>"; };
 		9BE91EC41DE9B5BD0099F4D4 /* FFNN+Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FFNN+Storage.swift"; sourceTree = "<group>"; };
 		9BE91EC51DE9B5BD0099F4D4 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
-		9BE91EC91DE9B5D60099F4D4 /* HandwritingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandwritingView.swift; sourceTree = "<group>"; };
+		9BE91EC91DE9B5D60099F4D4 /* HandwritingCanvasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandwritingCanvasView.swift; sourceTree = "<group>"; };
 		9BE91ECC1DE9B6980099F4D4 /* APConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APConstraints.swift; sourceTree = "<group>"; };
 		9BE91ED91DE9B6F70099F4D4 /* handwriting-ffnn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "handwriting-ffnn"; sourceTree = "<group>"; };
+		9BE91F1B1DF6EB2D0099F4D4 /* HandwritingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandwritingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +70,8 @@
 			children = (
 				9BE91EAF1DE9B42E0099F4D4 /* AppDelegate.swift */,
 				9BE91EC11DE9B55E0099F4D4 /* HandwritingViewController.swift */,
-				9BE91EC91DE9B5D60099F4D4 /* HandwritingView.swift */,
+				9BE91F1B1DF6EB2D0099F4D4 /* HandwritingView.swift */,
+				9BE91EC91DE9B5D60099F4D4 /* HandwritingCanvasView.swift */,
 				9BE91EC31DE9B5BD0099F4D4 /* FFNN.swift */,
 				9BE91EC41DE9B5BD0099F4D4 /* FFNN+Storage.swift */,
 				9BE91EC51DE9B5BD0099F4D4 /* Storage.swift */,
@@ -155,8 +158,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BE91ECA1DE9B5D60099F4D4 /* HandwritingView.swift in Sources */,
+				9BE91ECA1DE9B5D60099F4D4 /* HandwritingCanvasView.swift in Sources */,
 				9BE91EC61DE9B5BD0099F4D4 /* FFNN.swift in Sources */,
+				9BE91F1C1DF6EB2D0099F4D4 /* HandwritingView.swift in Sources */,
 				9BE91EC71DE9B5BD0099F4D4 /* FFNN+Storage.swift in Sources */,
 				9BE91EC21DE9B55E0099F4D4 /* HandwritingViewController.swift in Sources */,
 				9BE91EB01DE9B42E0099F4D4 /* AppDelegate.swift in Sources */,
