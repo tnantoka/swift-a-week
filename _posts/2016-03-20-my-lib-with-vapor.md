@@ -33,7 +33,7 @@ init() {
 
 以下のURLで試してみることができます。
 
-<http://my-lib.vapor.swiftaweek.com/>
+http://my-lib.vapor.swiftaweek.com/ (公開終了)
 
 iOSでもサーバサイドでも同じライブラリを使えるのはいいですね。
 今後ライブラリを作る時、UIKitに依存しないものはできるだけLinux対応にしていこうと思います。

@@ -20,7 +20,7 @@ init() {
 
 以下のURLで試してみることができます。
 
-<http://session.vapor.swiftaweek.com/>
+http://session.vapor.swiftaweek.com/ (公開終了)
 
 デフォルトでは`MemorySessionDriver.swift`が使われており、サーバーを再起動すると消えてしまいます。
 この辺りは今後の進化に期待ですね。（自分で書いてもよさそう。） 

@@ -4,7 +4,7 @@ title:  "サーバサイドSwiftで静的なHTMLを返すだけのシンプル�
 categories: tips
 ---
 
-サーバサイドSwiftで、<http://www.serversideswift.net/> というサイトを作っています。
+サーバサイドSwiftで、http://www.serversideswift.net/ というサイトを作っています。(公開終了) 
 ローカルでのテストを終えていざ公開、となった時にいくつかエラーに遭遇したので、そのメモです。
 
 ## Killed

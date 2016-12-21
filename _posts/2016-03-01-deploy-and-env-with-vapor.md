@@ -45,7 +45,7 @@ $ start HelloVapor
 
 これで以下のURLでHelloVaporにアクセスできるようになりました。
 
-<http://hello.vapor.swiftaweek.com/>
+http://hello.vapor.swiftaweek.com/ (公開終了)
 
 次に環境変数を表示してみます。
 いろいろやり方はあると思いますが、ひとまず起動スクリプトで設定します。
@@ -56,7 +56,7 @@ env:
   - { name: "TEST", value: "test" }
 {% endhighlight %}
 
-<http://env.vapor.swiftaweek.com/>
+http://env.vapor.swiftaweek.com/ (公開終了)
 
 Hello testの`test`の部分が環境変数から取った値です。
 
