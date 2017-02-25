@@ -1,0 +1,381 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7059D4B27C5C853C5BA382FF /* Pods_LTNSC4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CECD10D616E0CF481D39F2C /* Pods_LTNSC4.framework */; };
+		9B1E5AF91E61BF6700852DE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1E5AF81E61BF6700852DE7 /* AppDelegate.swift */; };
+		9B1E5AFB1E61BF6700852DE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1E5AFA1E61BF6700852DE7 /* ViewController.swift */; };
+		9B1E5AFE1E61BF6700852DE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B1E5AFC1E61BF6700852DE7 /* Main.storyboard */; };
+		9B1E5B001E61BF6700852DE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B1E5AFF1E61BF6700852DE7 /* Assets.xcassets */; };
+		9B1E5B031E61BF6700852DE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B1E5B011E61BF6700852DE7 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		17302597820F991A85D1ABEC /* Pods-LTNSC4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTNSC4.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LTNSC4/Pods-LTNSC4.debug.xcconfig"; sourceTree = "<group>"; };
+		414A83C64276E08C878E0750 /* Pods-LTNSC4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTNSC4.release.xcconfig"; path = "Pods/Target Support Files/Pods-LTNSC4/Pods-LTNSC4.release.xcconfig"; sourceTree = "<group>"; };
+		9B1E5AF51E61BF6700852DE7 /* LTNSC4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LTNSC4.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B1E5AF81E61BF6700852DE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9B1E5AFA1E61BF6700852DE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9B1E5AFD1E61BF6700852DE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9B1E5AFF1E61BF6700852DE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B1E5B021E61BF6700852DE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9B1E5B041E61BF6700852DE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CECD10D616E0CF481D39F2C /* Pods_LTNSC4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LTNSC4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B1E5AF21E61BF6700852DE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7059D4B27C5C853C5BA382FF /* Pods_LTNSC4.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		89D9AE9AD996A6CCC0734030 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17302597820F991A85D1ABEC /* Pods-LTNSC4.debug.xcconfig */,
+				414A83C64276E08C878E0750 /* Pods-LTNSC4.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9B1E5AEC1E61BF6700852DE7 = {
+			isa = PBXGroup;
+			children = (
+				9B1E5AF71E61BF6700852DE7 /* LTNSC4 */,
+				9B1E5AF61E61BF6700852DE7 /* Products */,
+				89D9AE9AD996A6CCC0734030 /* Pods */,
+				B89F8F90730243803F8F649C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9B1E5AF61E61BF6700852DE7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B1E5AF51E61BF6700852DE7 /* LTNSC4.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B1E5AF71E61BF6700852DE7 /* LTNSC4 */ = {
+			isa = PBXGroup;
+			children = (
+				9B1E5AF81E61BF6700852DE7 /* AppDelegate.swift */,
+				9B1E5AFA1E61BF6700852DE7 /* ViewController.swift */,
+				9B1E5AFC1E61BF6700852DE7 /* Main.storyboard */,
+				9B1E5AFF1E61BF6700852DE7 /* Assets.xcassets */,
+				9B1E5B011E61BF6700852DE7 /* LaunchScreen.storyboard */,
+				9B1E5B041E61BF6700852DE7 /* Info.plist */,
+			);
+			path = LTNSC4;
+			sourceTree = "<group>";
+		};
+		B89F8F90730243803F8F649C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CECD10D616E0CF481D39F2C /* Pods_LTNSC4.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9B1E5AF41E61BF6700852DE7 /* LTNSC4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B1E5B071E61BF6700852DE7 /* Build configuration list for PBXNativeTarget "LTNSC4" */;
+			buildPhases = (
+				6BCFCBBAB9BE0808ACD73033 /* [CP] Check Pods Manifest.lock */,
+				9B1E5AF11E61BF6700852DE7 /* Sources */,
+				9B1E5AF21E61BF6700852DE7 /* Frameworks */,
+				9B1E5AF31E61BF6700852DE7 /* Resources */,
+				F77B399BFCD15BCBDAC8D5D4 /* [CP] Embed Pods Frameworks */,
+				132797ACB298873BC2D7652A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LTNSC4;
+			productName = LTNSC4;
+			productReference = 9B1E5AF51E61BF6700852DE7 /* LTNSC4.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B1E5AED1E61BF6700852DE7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = tnantoka;
+				TargetAttributes = {
+					9B1E5AF41E61BF6700852DE7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9B1E5AF01E61BF6700852DE7 /* Build configuration list for PBXProject "LTNSC4" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9B1E5AEC1E61BF6700852DE7;
+			productRefGroup = 9B1E5AF61E61BF6700852DE7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B1E5AF41E61BF6700852DE7 /* LTNSC4 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B1E5AF31E61BF6700852DE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B1E5B031E61BF6700852DE7 /* LaunchScreen.storyboard in Resources */,
+				9B1E5B001E61BF6700852DE7 /* Assets.xcassets in Resources */,
+				9B1E5AFE1E61BF6700852DE7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		132797ACB298873BC2D7652A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LTNSC4/Pods-LTNSC4-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BCFCBBAB9BE0808ACD73033 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F77B399BFCD15BCBDAC8D5D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LTNSC4/Pods-LTNSC4-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B1E5AF11E61BF6700852DE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B1E5AFB1E61BF6700852DE7 /* ViewController.swift in Sources */,
+				9B1E5AF91E61BF6700852DE7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9B1E5AFC1E61BF6700852DE7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B1E5AFD1E61BF6700852DE7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9B1E5B011E61BF6700852DE7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B1E5B021E61BF6700852DE7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9B1E5B051E61BF6700852DE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9B1E5B061E61BF6700852DE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9B1E5B081E61BF6700852DE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17302597820F991A85D1ABEC /* Pods-LTNSC4.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LTNSC4/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tnantoka.LTNSC4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9B1E5B091E61BF6700852DE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 414A83C64276E08C878E0750 /* Pods-LTNSC4.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LTNSC4/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tnantoka.LTNSC4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B1E5AF01E61BF6700852DE7 /* Build configuration list for PBXProject "LTNSC4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B1E5B051E61BF6700852DE7 /* Debug */,
+				9B1E5B061E61BF6700852DE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B1E5B071E61BF6700852DE7 /* Build configuration list for PBXNativeTarget "LTNSC4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B1E5B081E61BF6700852DE7 /* Debug */,
+				9B1E5B091E61BF6700852DE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9B1E5AED1E61BF6700852DE7 /* Project object */;
+}
