@@ -15,7 +15,6 @@ Macアプリ用に作られたようですが、CLIはオープンソースで�
 $ git clone --recursive https://github.com/njdehoog/Spelt.git
 $ make bootstrap
 $ make prefix_install
-$ make uninstall
 
 $ spelt new hello-spelt
 $ cd hello-spelt/
