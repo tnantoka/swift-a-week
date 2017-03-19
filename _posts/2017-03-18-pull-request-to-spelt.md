@@ -15,3 +15,17 @@ categories: example
 
 ローカルではこれらをマージした版で運用してるので、今のところ大変快適です。
 ファイル変更後の再構築が速いのが一番気に入っています。
+
+ちなみに以下のような手順でローカルで試した後プルリクエストしました。
+
+{% highlight sh %}
+$ git clone --recursive git@github.com:tnantoka/Spelt.git
+$ cd Spelt/
+$ make bootstrap
+
+# 編集（Testの実行はコマンドUで）
+$ open Spelt.xcworkspace/
+
+# インストールして使ってみる
+$ make uninstall && make prefix_install
+{% endhighlight %}
