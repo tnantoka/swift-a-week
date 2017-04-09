@@ -1,6 +1,6 @@
 # Site settings
 title: Swift a Week
-motto: Swift a Week Challenge
+motto: 週に1度はSwiftを触る
 #email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Swiftの学習のために、少なくとも1週間に1つは手を動かして何かをアウトプットしよう、というブログです。
