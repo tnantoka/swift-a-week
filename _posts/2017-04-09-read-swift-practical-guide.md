@@ -29,14 +29,14 @@ p. 258 | 継承を利用すべき時：ストアドプロパティを複数の�
 p. 264 | ImplicitlyUnwrappedOptionalの使いどころ：最初nilが入るけどそれ以降は絶対入らない(Optionalだとnilが入ってくる仕様に誤解される)、サブクラスの初期化より前に親クラスを初期化したい
 p. 268 | 不正な状態でもできるだけ動いてほしいならOptional
 p. 275 | delegateを使うべき時：多数のイベント通知がある
-p. 282 | weakとunowned。nilにならないならunownedでいい。nilにならない仕様を明確化できる。でも結局weakの方が安全か。
+p. 282 | weakとunowned。nilにならないならunownedでいい。nilにならない仕様を明確化できる。でも結局weakの方が安全か。# TODO
 p. 284 | escapingなクロージャはself必須、循環参照に気づきやすいメリットある
 p. 285 | クロージャを使うべき時：処理の実行とコールバックを同じ場所に書きたい
 p. 289 | オブサーバを使うべき時：1対多の通知
 p. 306 | Threadを使うべき時：特になしw
 p. 313 | エラー処理にOptionalを使うべき時：値の有無だけで十分
 p. 316 | エラー処理にResultを使うべき時：エラーの詳細を知りたい、成功か失敗いずれかを保証、非同期処理
-p. 319 | `case error(String)`じゃなく`case error(reason: String)`わかりやすい
+p. 319 | `case error(String)`じゃなく`case error(reason: String)`わかりやすい # TODO
 p. 322 | rethrows知らなかった
 p. 343 | アサーションはデバッグの時だけ。fatalErrorはReleaseでも落ちる。
 p. 396 | Objective-Cの新機能（ライトウェイトジェネリクス、null許容性アノテーションなど）
