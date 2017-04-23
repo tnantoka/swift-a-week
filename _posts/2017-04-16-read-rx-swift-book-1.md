@@ -35,7 +35,7 @@ Observable.from([one, two, three]) // Observable<Int>
 - `ReplaySubjects`はバッファーサイズ分流れて来る
 - `Variables`は`value`を変えれば`onNext`しなくても流れてくる
 
-### 4章
+## 4章
 
 - コラージュアプリを作るサンプル
 - ImagesがVariables
