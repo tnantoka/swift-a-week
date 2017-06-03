@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "IconCreatorにGridを表示"
-categories: tips
+categories: library
 ---
 
 <https://github.com/tnantoka/IconCreator> にiOSのアイコングリッドらしきものを表示する機能を付けました。
