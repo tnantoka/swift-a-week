@@ -1,6 +1,6 @@
 # Swift a Week
 
-http://www.swiftaweek.com/
+http://swiftaweek.bornneet.com/
 
 ```
 $ jekyll serve -w --future
